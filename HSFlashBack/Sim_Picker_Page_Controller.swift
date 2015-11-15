@@ -19,8 +19,7 @@ class Salt_Sim_Page: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background"))
         // Do any additional setup after loading the view, typically from a nib.
         
         // Connect data:

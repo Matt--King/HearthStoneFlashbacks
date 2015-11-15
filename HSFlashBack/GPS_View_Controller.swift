@@ -24,10 +24,11 @@ class GPS_Page: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var locBox: UILabel!
     @IBOutlet weak var otherlocsbox: UILabel!
     @IBOutlet weak var serverstable: UIView!
-    
     @IBOutlet weak var closestServer: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background"))
         
         locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()

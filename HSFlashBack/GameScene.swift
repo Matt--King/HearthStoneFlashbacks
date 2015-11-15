@@ -11,8 +11,17 @@ import AVFoundation
 class GameScene: SKScene {
     
     var audioPlayer: AVAudioPlayer!
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        //	backgroundColor = SKColor.whiteColor()
+        self.scaleMode = SKSceneScaleMode.AspectFill
+        let bgImage = SKSpriteNode(imageNamed: "big_garrosh4")
+        //bgImage.xScale = 0.25
+        //bgImage.yScale = 0.25
+        bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
+        bgImage.zPosition = -1
+        self.addChild(bgImage)
         
         
     }

@@ -14,7 +14,8 @@ class Home_Page: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        // self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        let bgimage = UIImage(named: "background")!
+        self.view.backgroundColor = UIColor(patternImage: bgimage)
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,6 +32,8 @@ class Simulators_Page: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let bgimage = UIImage(named: "background")!
+        self.view.backgroundColor = UIColor(patternImage: bgimage)
     }
     
     override func didReceiveMemoryWarning() {

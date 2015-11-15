@@ -353,7 +353,7 @@
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9eR-kd-Wkv">
                                                 <rect key="frame" x="16" y="7" width="71" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
+                                                <state key="normal" title="Back" backgroundImage="background"/>
                                                 <connections>
                                                     <segue destination="BYZ-38-t0r" kind="show" id="S0E-c9-aLL"/>
                                                 </connections>
@@ -372,18 +372,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-91-lj8">
-                                <rect key="frame" x="0.0" y="247" width="320" height="225"/>
-                                <connections>
-                                    <segue destination="lEv-8w-oG8" kind="embed" id="dm5-Sm-WkI"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Possible Sources of Pain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xz-nT-aLZ">
                                 <rect key="frame" x="0.0" y="218" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-91-lj8">
+                                <rect key="frame" x="0.0" y="247" width="320" height="225"/>
+                                <connections>
+                                    <segue destination="lEv-8w-oG8" kind="embed" id="dm5-Sm-WkI"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -774,6 +774,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="865" height="878"/>
         <image name="concede" width="242" height="54"/>
         <image name="empty" width="823" height="1179"/>
         <image name="logo" width="400" height="543"/>
@@ -781,7 +782,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="S0E-c9-aLL"/>
-        <segue reference="XC2-HU-z2O"/>
         <segue reference="K4g-qR-uNj"/>
+        <segue reference="hnX-SN-6bW"/>
     </inferredMetricsTieBreakers>
 </document>

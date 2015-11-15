@@ -134,6 +134,8 @@ class Settings_Page: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let bgimage = UIImage(named: "background")!
+        self.view.backgroundColor = UIColor(patternImage: bgimage)
         nameField.delegate = self;
         imagePicker.delegate = self
     }

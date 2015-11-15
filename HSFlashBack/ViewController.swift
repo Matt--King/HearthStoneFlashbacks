@@ -14,7 +14,7 @@ class Home_Page: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        // self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
     
     override func didReceiveMemoryWarning() {

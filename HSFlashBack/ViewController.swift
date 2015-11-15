@@ -14,6 +14,7 @@ class Home_Page: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,7 +40,7 @@ class Simulators_Page: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         // navigationItem.title = "One"
-        navigationItem.title = "Test"
+        // navigationItem.title = "Test"
     }
     
     

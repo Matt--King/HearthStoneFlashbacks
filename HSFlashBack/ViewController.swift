@@ -9,8 +9,6 @@
 import UIKit
 import MobileCoreServices
 
-
-
 class Home_Page: UIViewController {
     
     override func viewDidLoad() {

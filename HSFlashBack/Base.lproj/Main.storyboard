@@ -80,15 +80,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjB-Hr-gCv">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjB-Hr-gCv">
                                 <rect key="frame" x="39" y="20" width="243" height="54"/>
-                                <state key="normal" title="Button" image="concede"/>
+                                <state key="normal" image="concede"/>
                                 <connections>
                                     <segue destination="UQn-TF-rGs" kind="show" id="hnX-SN-6bW"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xjB-Hr-gCv" firstAttribute="top" secondItem="LF8-eD-vcQ" secondAttribute="bottom" id="hPI-B2-Kho"/>
+                            <constraint firstItem="xjB-Hr-gCv" firstAttribute="centerX" secondItem="9q6-z8-FZR" secondAttribute="centerX" id="mDs-Uw-hZw"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
@@ -125,18 +129,18 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGA-fS-hW7">
-                                <rect key="frame" x="0.0" y="185" width="320" height="30"/>
-                                <state key="normal" title="General Saltiness Simulator"/>
-                                <connections>
-                                    <segue destination="O1I-XG-WbR" kind="show" id="K4g-qR-uNj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m15-Lu-W82">
-                                <rect key="frame" x="0.0" y="265" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="264" width="320" height="30"/>
                                 <state key="normal" title="Grim Patron Flashback"/>
                                 <connections>
                                     <segue destination="qfr-ba-b5S" kind="show" id="Ow4-ZE-QxR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGA-fS-hW7">
+                                <rect key="frame" x="0.0" y="184" width="320" height="30"/>
+                                <state key="normal" title="General Saltiness Simulator"/>
+                                <connections>
+                                    <segue destination="O1I-XG-WbR" kind="show" id="K4g-qR-uNj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,10 +150,10 @@
                             <constraint firstItem="m15-Lu-W82" firstAttribute="top" secondItem="BGA-fS-hW7" secondAttribute="bottom" constant="50" id="9Rw-hd-9Je"/>
                             <constraint firstItem="m15-Lu-W82" firstAttribute="centerX" secondItem="pQV-Gk-PwJ" secondAttribute="centerX" id="Bg1-4B-Ssm"/>
                             <constraint firstItem="BGA-fS-hW7" firstAttribute="width" secondItem="pQV-Gk-PwJ" secondAttribute="width" id="FeA-BC-nW5"/>
-                            <constraint firstItem="vvH-7X-meI" firstAttribute="top" secondItem="m15-Lu-W82" secondAttribute="bottom" constant="185" id="Mlg-Tg-PVR"/>
                             <constraint firstItem="BGA-fS-hW7" firstAttribute="centerX" secondItem="pQV-Gk-PwJ" secondAttribute="centerX" id="a3O-OW-Eqo"/>
                             <constraint firstItem="QcE-NY-iMf" firstAttribute="centerX" secondItem="pQV-Gk-PwJ" secondAttribute="centerX" id="gwX-0i-jnj"/>
                             <constraint firstItem="QcE-NY-iMf" firstAttribute="top" secondItem="BgS-TL-6VY" secondAttribute="bottom" id="w67-ma-tCV"/>
+                            <constraint firstItem="BGA-fS-hW7" firstAttribute="top" secondItem="QcE-NY-iMf" secondAttribute="bottom" constant="120" id="xd3-ex-gWZ"/>
                             <constraint firstItem="QcE-NY-iMf" firstAttribute="width" secondItem="pQV-Gk-PwJ" secondAttribute="width" id="xiK-f5-bCW"/>
                         </constraints>
                     </view>

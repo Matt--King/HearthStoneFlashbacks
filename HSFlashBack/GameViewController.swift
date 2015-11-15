@@ -16,12 +16,29 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
             let scene = GameScene(size: view.bounds.size)
             let skView = view as! SKView
             skView.ignoresSiblingOrder = true
             scene.scaleMode = .ResizeFill
             skView.presentScene(scene)
         
+        
+        
+    }
+   
+    override func viewDidAppear(animated: Bool) {
+        
+        var alertController:UIAlertController?
+        alertController = UIAlertController(title: "Tap the Screen",
+            message: "Tap to truly experience fear", preferredStyle: .Alert)
+        
+        let firstAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController!.addAction(firstAction)
+        self.presentViewController(alertController!, animated: true, completion: nil)
+        
+
     }
     
     override func shouldAutorotate() -> Bool {

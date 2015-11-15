@@ -19,13 +19,13 @@ class GPS_Page: UIViewController, CLLocationManagerDelegate {
     
     var servers: [Double] = [Double]()
     var serverNames: [String] = [String]()
-    
-    @IBOutlet weak var latBox: UILabel!
+        @IBOutlet weak var latBox: UILabel!
     @IBOutlet weak var lonBox: UILabel!
     @IBOutlet weak var locBox: UILabel!
-    @IBOutlet weak var closestServer: UITextView!
+    @IBOutlet weak var otherlocsbox: UILabel!
+    @IBOutlet weak var serverstable: UIView!
     
-    
+    @IBOutlet weak var closestServer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,6 +47,8 @@ class GPS_Page: UIViewController, CLLocationManagerDelegate {
                 closestServer.hidden = true
                 latBox.text = "Location services have not "
                 lonBox.text = "been enabled for this app"
+                otherlocsbox.hidden = true
+                serverstable.hidden = true
                 
             }
         }
@@ -112,7 +114,6 @@ class GPS_Page: UIViewController, CLLocationManagerDelegate {
                 }
                 let painLocation:String = serverNames[shortestIter]
                 closestServer.text = "Your Hearthstone trauma is occurring on the Blizzard servers located in \(painLocation)!"
-                
                 
                 
             }

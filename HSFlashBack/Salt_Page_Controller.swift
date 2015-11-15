@@ -37,7 +37,7 @@ class Salt_Page: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background"))
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
         // Do any additional setup after loading the view, typically from a nib.
         //Set up the Emote and Image

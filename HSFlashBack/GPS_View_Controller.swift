@@ -28,7 +28,7 @@ class GPS_Page: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background"))
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
         locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()

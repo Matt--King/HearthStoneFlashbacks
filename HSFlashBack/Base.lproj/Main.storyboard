@@ -633,7 +633,7 @@
                                                     <constraint firstAttribute="height" constant="221" id="ut7-bf-fjU"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="1Bz-iu-X19">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="1Bz-iu-X19">
                                                 <rect key="frame" x="14" y="0.0" width="211" height="276"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1Bz-iu-X19" secondAttribute="height" multiplier="211:276" id="Lia-fE-53Q"/>
@@ -765,7 +765,7 @@
                                     <rect key="frame" x="20" y="421" width="280" height="22"/>
                                 </variation>
                             </label>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="icL-3W-2vh">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="icL-3W-2vh">
                                 <rect key="frame" x="35" y="67" width="250" height="345"/>
                                 <gestureRecognizers/>
                                 <constraints>

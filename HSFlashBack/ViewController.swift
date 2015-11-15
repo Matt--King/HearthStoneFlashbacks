@@ -13,6 +13,7 @@ class Home_Page: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background"))
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -29,6 +30,7 @@ class Simulators_Page: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background"))s
         // Do any additional setup after loading the view, typically from a nib.
     }
     

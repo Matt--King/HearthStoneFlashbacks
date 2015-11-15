@@ -133,6 +133,7 @@ class Settings_Page: UIViewController, UIImagePickerControllerDelegate, UINaviga
     // Defaults / Misc
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background"))
         // Do any additional setup after loading the view, typically from a nib.
         nameField.delegate = self;
         imagePicker.delegate = self

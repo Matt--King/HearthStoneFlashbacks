@@ -81,8 +81,14 @@ class GPS_Page: UIViewController, CLLocationManagerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        self.locationManager.stopUpdatingLocation()
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.locationManager.stopUpdatingLocation()
+    }
     func locationManager(manager: CLLocationManager, didUpdateLocations
         locations: [CLLocation]) {
             if locations.count == 0{

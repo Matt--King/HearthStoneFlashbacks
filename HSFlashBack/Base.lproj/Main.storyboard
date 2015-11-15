@@ -449,10 +449,10 @@
             </objects>
             <point key="canvasLocation" x="-1160" y="-724"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table Controller-->
         <scene sceneID="OMo-oO-yh9">
             <objects>
-                <tableViewController id="lEv-8w-oG8" sceneMemberID="viewController">
+                <tableViewController id="lEv-8w-oG8" customClass="GPS_Table_Controller" customModule="HSFlashBack" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="xCW-lD-nt9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -594,6 +594,15 @@
                             <outlet property="delegate" destination="lEv-8w-oG8" id="VeF-2i-XBd"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="table" destination="xCW-lD-nt9" id="93w-bE-nML"/>
+                        <outlet property="tablepiece1" destination="1cg-SD-CW4" id="7Lc-pY-uGe"/>
+                        <outlet property="tablepiece2" destination="7v8-un-QAY" id="Wfe-jJ-fbp"/>
+                        <outlet property="tablepiece3" destination="7Iz-2S-dTZ" id="EmP-J7-aFX"/>
+                        <outlet property="tablepiece4" destination="j0R-6l-XRN" id="7kl-ny-eGn"/>
+                        <outlet property="tablepiece5" destination="cs1-gV-lpQ" id="nxQ-Z0-kHR"/>
+                        <outlet property="tablepiece6" destination="mh1-Mj-IsU" id="PAV-XB-eV5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubg-FY-62K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

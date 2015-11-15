@@ -47,7 +47,6 @@
 		BABCFDCB1BF82A9B008E52A0 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BABCFDCF1BF82D64008E52A0 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
-		BABCFDD11BF82D96008E52A0 /* GET_IN_HERE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = GET_IN_HERE.mp3; path = ../../Downloads/GET_IN_HERE.mp3; sourceTree = "<group>"; };
 		BABCFDD61BF831B5008E52A0 /* GET_IN_HERE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GET_IN_HERE.mp3; sourceTree = "<group>"; };
 		BAD13E661BF2DD8400BC8AA8 /* Salt_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salt_Page_Controller.swift; sourceTree = "<group>"; };
 		BAD13E681BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sim_Picker_Page_Controller.swift; sourceTree = "<group>"; };
@@ -78,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				BABCFDD61BF831B5008E52A0 /* GET_IN_HERE.mp3 */,
-				BABCFDD11BF82D96008E52A0 /* GET_IN_HERE.mp3 */,
 				BABCFDCF1BF82D64008E52A0 /* GameController.framework */,
 				BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */,
 				BA7FA3441BF596C500A40D4E /* Valeera_Sanguinar.mp3 */,

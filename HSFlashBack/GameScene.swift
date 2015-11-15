@@ -11,12 +11,8 @@ import AVFoundation
 class GameScene: SKScene {
     
     var audioPlayer: AVAudioPlayer!
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        
-        
-    }
     
+  
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
         
@@ -42,6 +38,17 @@ class GameScene: SKScene {
             
             
         }
+    }
+    
+    
+    override func didMoveToView(view: SKView) {
+        /* Setup your scene here */
+        //	backgroundColor = SKColor.whiteColor()
+        self.scaleMode = SKSceneScaleMode.AspectFill
+        let bgImage = SKSpriteNode(imageNamed: "garrosh_bg")
+        bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
+        bgImage.zPosition = -1
+        self.addChild(bgImage)
     }
     
     override func update(currentTime: CFTimeInterval) {

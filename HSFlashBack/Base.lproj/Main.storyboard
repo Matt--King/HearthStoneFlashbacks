@@ -16,14 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-0I-kQc">
-                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip7-W5-5La">
-                                <rect key="frame" x="40" y="78" width="240" height="324"/>
+                                <rect key="frame" x="180" y="138" width="240" height="324"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="U4b-fM-evH">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="324"/>
@@ -215,32 +215,66 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGA-fS-hW7">
-                                <rect key="frame" x="0.0" y="185" width="320" height="30"/>
-                                <state key="normal" title="General Saltiness Simulator"/>
-                                <connections>
-                                    <segue destination="O1I-XG-WbR" kind="show" id="K4g-qR-uNj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m15-Lu-W82">
-                                <rect key="frame" x="0.0" y="265" width="320" height="30"/>
-                                <state key="normal" title="Grim Patron Flashback"/>
-                                <connections>
-                                    <segue destination="qfr-ba-b5S" kind="show" id="Ow4-ZE-QxR"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaG-kK-BaL">
+                                <rect key="frame" x="0.0" y="64" width="320" height="408"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salt_Portrait" translatesAutoresizingMaskIntoConstraints="NO" id="F82-GG-3nH">
+                                        <rect key="frame" x="117" y="212" width="88" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="3ID-iq-ys6"/>
+                                            <constraint firstAttribute="width" secondItem="F82-GG-3nH" secondAttribute="height" multiplier="120:173" id="X2X-bC-kHa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Garrosh_Hellscream" translatesAutoresizingMaskIntoConstraints="NO" id="Rg6-xT-h3h">
+                                        <rect key="frame" x="117" y="49" width="88" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="byp-4L-jHh"/>
+                                            <constraint firstAttribute="width" secondItem="Rg6-xT-h3h" secondAttribute="height" multiplier="120:173" id="mo0-ez-1Cq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m15-Lu-W82">
+                                        <rect key="frame" x="41" y="174" width="239" height="30"/>
+                                        <state key="normal" title="Grim Patron Warrior"/>
+                                        <connections>
+                                            <segue destination="qfr-ba-b5S" kind="show" id="Ow4-ZE-QxR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGA-fS-hW7">
+                                        <rect key="frame" x="41" y="348" width="239" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="9Lh-aw-git"/>
+                                        </constraints>
+                                        <state key="normal" title="General Saltiness"/>
+                                        <connections>
+                                            <segue destination="O1I-XG-WbR" kind="show" id="K4g-qR-uNj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="F82-GG-3nH" firstAttribute="top" secondItem="Rg6-xT-h3h" secondAttribute="bottom" constant="35" id="3k0-9M-uAi"/>
+                                    <constraint firstItem="F82-GG-3nH" firstAttribute="leading" secondItem="Rg6-xT-h3h" secondAttribute="leading" id="8BB-Dp-so7"/>
+                                    <constraint firstAttribute="trailing" secondItem="m15-Lu-W82" secondAttribute="trailing" constant="40" id="EiF-0x-qaS"/>
+                                    <constraint firstItem="m15-Lu-W82" firstAttribute="trailing" secondItem="BGA-fS-hW7" secondAttribute="trailing" id="Inw-uJ-hSR"/>
+                                    <constraint firstItem="BGA-fS-hW7" firstAttribute="bottom" secondItem="OaG-kK-BaL" secondAttribute="bottomMargin" constant="-28" id="Tqu-3i-5ae"/>
+                                    <constraint firstItem="Rg6-xT-h3h" firstAttribute="top" secondItem="OaG-kK-BaL" secondAttribute="top" constant="49" id="Ydh-Qh-xBa"/>
+                                    <constraint firstItem="m15-Lu-W82" firstAttribute="leading" secondItem="OaG-kK-BaL" secondAttribute="leading" constant="41" id="dw8-lT-SNB"/>
+                                    <constraint firstItem="BGA-fS-hW7" firstAttribute="centerX" secondItem="F82-GG-3nH" secondAttribute="centerX" id="g2y-Cd-lzK"/>
+                                    <constraint firstAttribute="bottom" secondItem="F82-GG-3nH" secondAttribute="bottom" constant="68" id="gJE-ES-M7J"/>
+                                    <constraint firstItem="BGA-fS-hW7" firstAttribute="leading" secondItem="m15-Lu-W82" secondAttribute="leading" id="kPs-oa-eIv"/>
+                                    <constraint firstItem="Rg6-xT-h3h" firstAttribute="centerX" secondItem="OaG-kK-BaL" secondAttribute="centerX" constant="1" id="vQE-UN-mhW"/>
+                                    <constraint firstItem="F82-GG-3nH" firstAttribute="top" secondItem="m15-Lu-W82" secondAttribute="bottom" constant="8" symbolic="YES" id="yDV-7D-d40"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="m15-Lu-W82" firstAttribute="width" secondItem="pQV-Gk-PwJ" secondAttribute="width" id="2wB-ps-ujF"/>
-                            <constraint firstItem="m15-Lu-W82" firstAttribute="top" secondItem="BGA-fS-hW7" secondAttribute="bottom" constant="50" id="9Rw-hd-9Je"/>
-                            <constraint firstItem="m15-Lu-W82" firstAttribute="centerX" secondItem="pQV-Gk-PwJ" secondAttribute="centerX" id="Bg1-4B-Ssm"/>
-                            <constraint firstItem="BGA-fS-hW7" firstAttribute="width" secondItem="pQV-Gk-PwJ" secondAttribute="width" id="FeA-BC-nW5"/>
-                            <constraint firstItem="BGA-fS-hW7" firstAttribute="centerX" secondItem="pQV-Gk-PwJ" secondAttribute="centerX" id="a3O-OW-Eqo"/>
-                            <constraint firstItem="QcE-NY-iMf" firstAttribute="top" secondItem="BgS-TL-6VY" secondAttribute="bottom" id="fY7-v2-oJy"/>
-                            <constraint firstItem="BGA-fS-hW7" firstAttribute="top" secondItem="QcE-NY-iMf" secondAttribute="bottom" constant="121" id="fky-4W-DxQ"/>
-                            <constraint firstItem="QcE-NY-iMf" firstAttribute="centerX" secondItem="pQV-Gk-PwJ" secondAttribute="centerX" id="gwX-0i-jnj"/>
-                            <constraint firstItem="QcE-NY-iMf" firstAttribute="width" secondItem="pQV-Gk-PwJ" secondAttribute="width" id="xiK-f5-bCW"/>
+                            <constraint firstItem="QcE-NY-iMf" firstAttribute="width" secondItem="pQV-Gk-PwJ" secondAttribute="width" id="0p0-Jj-vaC"/>
+                            <constraint firstItem="OaG-kK-BaL" firstAttribute="trailing" secondItem="QcE-NY-iMf" secondAttribute="trailing" id="Cj3-0R-rcK"/>
+                            <constraint firstItem="OaG-kK-BaL" firstAttribute="leading" secondItem="QcE-NY-iMf" secondAttribute="leading" id="LKk-Ec-BWo"/>
+                            <constraint firstItem="OaG-kK-BaL" firstAttribute="top" secondItem="QcE-NY-iMf" secondAttribute="bottom" id="Wq9-nh-G2j"/>
+                            <constraint firstItem="QcE-NY-iMf" firstAttribute="top" secondItem="BgS-TL-6VY" secondAttribute="bottom" id="YV6-H2-Hdv"/>
+                            <constraint firstItem="QcE-NY-iMf" firstAttribute="centerX" secondItem="pQV-Gk-PwJ" secondAttribute="centerX" id="rBL-td-yty"/>
+                            <constraint firstItem="vvH-7X-meI" firstAttribute="top" secondItem="OaG-kK-BaL" secondAttribute="bottom" constant="8" symbolic="YES" id="uDv-Bq-j8k"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -836,6 +870,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Garrosh_Hellscream" width="823" height="1179"/>
+        <image name="Salt_Portrait" width="392" height="561"/>
         <image name="background" width="865" height="878"/>
         <image name="concede" width="242" height="54"/>
         <image name="logo" width="400" height="543"/>
@@ -844,8 +880,8 @@
         <image name="wood" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aPF-mT-vjN"/>
-        <segue reference="K4g-qR-uNj"/>
+        <segue reference="IXb-TM-Old"/>
         <segue reference="hnX-SN-6bW"/>
+        <segue reference="K4g-qR-uNj"/>
     </inferredMetricsTieBreakers>
 </document>

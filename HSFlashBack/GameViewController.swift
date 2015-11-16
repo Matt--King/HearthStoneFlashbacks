@@ -10,12 +10,15 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
+
 
 class GameViewController: UIViewController {  
+    var audioPlayer:AVAudioPlayer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
             let scene = GameScene(size: view.bounds.size)
             let skView = view as! SKView
             skView.ignoresSiblingOrder = true
@@ -24,6 +27,19 @@ class GameViewController: UIViewController {
         
     }
     
+    @IBAction func concedePress(sender: UIButton) {
+        
+        self.audioPlayer = AVAudioPlayer()
+        let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("garrosh_gg", ofType: "mp3")!)
+        do{
+            self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        }catch {
+            print("Error getting the audio file")
+        }
+
+    }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         var alertController:UIAlertController?

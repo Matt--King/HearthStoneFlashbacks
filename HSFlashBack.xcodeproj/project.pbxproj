@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2801591BFD70F800729E12 /* Garrosh_greetings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA2801581BFD70F800729E12 /* Garrosh_greetings.mp3 */; };
+		BA28015B1BFD7B9200729E12 /* pile_on.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA28015A1BFD7B9200729E12 /* pile_on.mp3 */; };
 		BA5D930D1BF9406A00F79222 /* Anduin_Wrynn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */; };
 		BA5D930F1BF948DE00F79222 /* GPS_Table_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */; };
 		BA5D93111BF95C0500F79222 /* garrosh_gg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA5D93101BF95C0500F79222 /* garrosh_gg.mp3 */; };
@@ -112,6 +114,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA2801581BFD70F800729E12 /* Garrosh_greetings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Garrosh_greetings.mp3; sourceTree = "<group>"; };
+		BA28015A1BFD7B9200729E12 /* pile_on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pile_on.mp3; path = ../pile_on.mp3; sourceTree = "<group>"; };
 		BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Anduin_Wrynn.mp3; sourceTree = "<group>"; };
 		BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_Table_Controller.swift; sourceTree = "<group>"; };
 		BA5D93101BF95C0500F79222 /* garrosh_gg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = garrosh_gg.mp3; sourceTree = "<group>"; };
@@ -343,6 +347,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA28015B1BFD7B9200729E12 /* pile_on.mp3 in Resources */,
+				BA2801591BFD70F800729E12 /* Garrosh_greetings.mp3 in Resources */,
 				BA5D93111BF95C0500F79222 /* garrosh_gg.mp3 in Resources */,
 				BA5D930D1BF9406A00F79222 /* Anduin_Wrynn.mp3 in Resources */,
 				BABCFDD71BF831B5008E52A0 /* GET_IN_HERE.mp3 in Resources */,

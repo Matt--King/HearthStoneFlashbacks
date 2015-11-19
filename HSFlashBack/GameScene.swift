@@ -23,12 +23,8 @@ class GameScene: SKScene {
             if RNGesus == 1 {
                 
                 sprite = SKSpriteNode(imageNamed:"goldenpatron")
-                
                 let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-                
                 sprite.runAction(SKAction.repeatActionForever(action))
-                
-
                 sprite.xScale = 0.45
                 sprite.yScale = 0.45
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pile_on", ofType: "mp3")!)
@@ -36,25 +32,22 @@ class GameScene: SKScene {
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
                     audioPlayer.prepareToPlay()
                     audioPlayer.play()
-                    
                 }catch {
                     print("Error getting the audio file")
                 }
 
             } else {
-            sprite = SKSpriteNode(imageNamed:"patron")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
-            do{
-                self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
-                audioPlayer.prepareToPlay()
-                audioPlayer.play()
-                
-            }catch {
-                print("Error getting the audio file")
-            }
+                sprite = SKSpriteNode(imageNamed:"patron")
+                sprite.xScale = 0.5
+                sprite.yScale = 0.5
+                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
+                do{
+                    self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.play()
+                }catch {
+                    print("Error getting the audio file")
+                }
             
             }
             

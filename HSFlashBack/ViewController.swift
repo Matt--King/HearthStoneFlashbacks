@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 import MobileCoreServices
 
 class Home_Page: UIViewController {
@@ -28,6 +29,7 @@ class Home_Page: UIViewController {
 
 class Simulators_Page: UIViewController {
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
@@ -45,7 +47,7 @@ class Simulators_Page: UIViewController {
     }
     
     
-  
+    
 
 }
 

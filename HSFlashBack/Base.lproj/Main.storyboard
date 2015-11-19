@@ -16,14 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-0I-kQc">
-                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip7-W5-5La">
-                                <rect key="frame" x="40" y="78" width="240" height="324"/>
+                                <rect key="frame" x="180" y="138" width="240" height="324"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="U4b-fM-evH">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="324"/>
@@ -222,27 +222,28 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaG-kK-BaL">
                                 <rect key="frame" x="0.0" y="64" width="320" height="408"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salt_Portrait" translatesAutoresizingMaskIntoConstraints="NO" id="F82-GG-3nH">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salt_Portrait" translatesAutoresizingMaskIntoConstraints="NO" id="F82-GG-3nH">
                                         <rect key="frame" x="117" y="212" width="88" height="128"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="3ID-iq-ys6"/>
                                             <constraint firstAttribute="width" secondItem="F82-GG-3nH" secondAttribute="height" multiplier="120:173" id="X2X-bC-kHa"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="T43-ZJ-AP9" appends="YES" id="6ck-sD-1vX"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Garrosh_Hellscream" translatesAutoresizingMaskIntoConstraints="NO" id="Rg6-xT-h3h">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Garrosh_Hellscream" translatesAutoresizingMaskIntoConstraints="NO" id="Rg6-xT-h3h">
                                         <rect key="frame" x="117" y="49" width="88" height="128"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="byp-4L-jHh"/>
                                             <constraint firstAttribute="width" secondItem="Rg6-xT-h3h" secondAttribute="height" multiplier="120:173" id="mo0-ez-1Cq"/>
                                         </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m15-Lu-W82">
-                                        <rect key="frame" x="41" y="174" width="239" height="30"/>
-                                        <state key="normal" title="Grim Patron Warrior"/>
                                         <connections>
-                                            <segue destination="qfr-ba-b5S" kind="show" id="Ow4-ZE-QxR"/>
+                                            <outletCollection property="gestureRecognizers" destination="r2A-Ho-gIH" appends="YES" id="3Zj-OS-r4P"/>
                                         </connections>
-                                    </button>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGA-fS-hW7">
                                         <rect key="frame" x="41" y="348" width="239" height="24"/>
                                         <constraints>
@@ -251,6 +252,13 @@
                                         <state key="normal" title="General Saltiness"/>
                                         <connections>
                                             <segue destination="O1I-XG-WbR" kind="show" id="K4g-qR-uNj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m15-Lu-W82">
+                                        <rect key="frame" x="41" y="174" width="239" height="30"/>
+                                        <state key="normal" title="Grim Patron Warrior"/>
+                                        <connections>
+                                            <segue destination="qfr-ba-b5S" kind="show" id="Ow4-ZE-QxR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -284,6 +292,16 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoL-Yg-hQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="T43-ZJ-AP9">
+                    <connections>
+                        <segue destination="O1I-XG-WbR" kind="show" id="3tk-rL-RCj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="r2A-Ho-gIH">
+                    <connections>
+                        <segue destination="qfr-ba-b5S" kind="show" id="xaq-V3-vsN"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1486" y="-1427"/>
         </scene>
@@ -676,7 +694,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCL-SH-HbD">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bCL-SH-HbD">
                                 <rect key="frame" x="-4" y="64" width="328" height="408"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQK-Lp-2KC">
@@ -684,13 +702,6 @@
                                         <state key="normal" title="Take A Picture"/>
                                         <connections>
                                             <action selector="loadImage:" destination="vlm-b6-Yz7" eventType="touchUpInside" id="8ue-C4-kfS"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-84-Zps">
-                                        <rect key="frame" x="45" y="378" width="238" height="30"/>
-                                        <state key="normal" title="Share this App with Your Friends!"/>
-                                        <connections>
-                                            <action selector="showShare:" destination="vlm-b6-Yz7" eventType="touchUpInside" id="yGA-AY-4hR"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeW-yE-1Ys" userLabel="heroPortrait">
@@ -745,13 +756,19 @@
                                             <action selector="saveHeroPortrait:" destination="vlm-b6-Yz7" eventType="touchUpInside" id="nLF-ey-TMi"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-84-Zps">
+                                        <rect key="frame" x="45" y="378" width="238" height="30"/>
+                                        <state key="normal" title="Share this App with Your Friends!"/>
+                                        <connections>
+                                            <action selector="showShare:" destination="vlm-b6-Yz7" eventType="touchUpInside" id="yGA-AY-4hR"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="XQK-Lp-2KC" firstAttribute="top" secondItem="zeW-yE-1Ys" secondAttribute="bottom" constant="8" symbolic="YES" id="1Iv-Cp-Px1"/>
                                     <constraint firstItem="RM5-84-Zps" firstAttribute="leading" secondItem="bCL-SH-HbD" secondAttribute="leading" constant="45" id="2sS-PR-nTm"/>
                                     <constraint firstItem="5d0-b4-7bi" firstAttribute="centerX" secondItem="bCL-SH-HbD" secondAttribute="centerX" id="466-B6-z5n"/>
                                     <constraint firstItem="zeW-yE-1Ys" firstAttribute="top" secondItem="bCL-SH-HbD" secondAttribute="topMargin" id="BR3-b7-jFi"/>
-                                    <constraint firstItem="RM5-84-Zps" firstAttribute="top" secondItem="5d0-b4-7bi" secondAttribute="bottom" constant="8" id="SBQ-PT-cRQ"/>
                                     <constraint firstItem="RM5-84-Zps" firstAttribute="bottom" secondItem="bCL-SH-HbD" secondAttribute="bottomMargin" constant="8" id="ULL-jx-sCK"/>
                                     <constraint firstItem="XQK-Lp-2KC" firstAttribute="centerX" secondItem="bCL-SH-HbD" secondAttribute="centerX" id="iGa-0t-qTb"/>
                                     <constraint firstItem="5d0-b4-7bi" firstAttribute="top" secondItem="XQK-Lp-2KC" secondAttribute="bottom" constant="7" id="jro-Ni-of5"/>
@@ -772,6 +789,7 @@
                             <constraint firstItem="bCL-SH-HbD" firstAttribute="top" secondItem="vku-be-krv" secondAttribute="bottom" id="jJk-bU-Ph2"/>
                             <constraint firstItem="vku-be-krv" firstAttribute="centerX" secondItem="AUN-kj-Weo" secondAttribute="centerX" id="wLU-hp-GwK"/>
                             <constraint firstItem="vku-be-krv" firstAttribute="top" secondItem="XI2-fc-nBt" secondAttribute="bottom" id="yes-cr-idH"/>
+                            <constraint firstItem="bCL-SH-HbD" firstAttribute="top" secondItem="vku-be-krv" secondAttribute="bottom" constant="24" id="z16-by-M3k"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -809,7 +827,9 @@
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g94-ye-wLd">
                                                 <rect key="frame" x="16" y="7" width="71" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Concede"/>
+                                                <state key="normal" title="Concede">
+                                                    <color key="titleColor" red="0.18823529410000001" green="0.87843137250000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="O1I-XG-WbR" kind="show" id="rFQ-c0-rYV"/>
                                                 </connections>
@@ -883,8 +903,9 @@
         <image name="wood" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="IXb-TM-Old"/>
+        <segue reference="KMN-xN-BDx"/>
         <segue reference="K4g-qR-uNj"/>
-        <segue reference="XC2-HU-z2O"/>
-        <segue reference="aPF-mT-vjN"/>
+        <segue reference="xaq-V3-vsN"/>
     </inferredMetricsTieBreakers>
 </document>

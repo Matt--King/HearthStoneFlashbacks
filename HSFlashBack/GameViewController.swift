@@ -25,6 +25,17 @@ class GameViewController: UIViewController {
             scene.scaleMode = .ResizeFill
             skView.presentScene(scene)
         
+        self.audioPlayer = AVAudioPlayer()
+        let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Garrosh_greetings", ofType: "mp3")!)
+        do{
+            self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
+            self.audioPlayer.prepareToPlay()
+            self.audioPlayer.play()
+        }catch {
+            print("Error getting the audio file")
+        }
+
+        
     }
     
     @IBAction func concedePress(sender: UIButton) {

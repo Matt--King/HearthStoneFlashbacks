@@ -11,7 +11,7 @@ import AVFoundation
 class GameScene: SKScene {
     
     var audioPlayer: AVAudioPlayer!
-    
+    var Zcounter: Int = 1
   
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
@@ -19,15 +19,18 @@ class GameScene: SKScene {
         for touch in touches {
             let location = touch.locationInNode(self)
             let RNGesus = Int(arc4random_uniform(6) + 1)
-            
+            var sprite = SKSpriteNode()
             if RNGesus == 1 {
                 
-                let sprite = SKSpriteNode(imageNamed:"goldenpatron")
+                sprite = SKSpriteNode(imageNamed:"goldenpatron")
                 
-                sprite.xScale = 0.5
-                sprite.yScale = 0.5
-                sprite.position = location
-                self.addChild(sprite)
+                let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+                
+                sprite.runAction(SKAction.repeatActionForever(action))
+                
+
+                sprite.xScale = 0.45
+                sprite.yScale = 0.45
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pile_on", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
@@ -39,12 +42,10 @@ class GameScene: SKScene {
                 }
 
             } else {
-            let sprite = SKSpriteNode(imageNamed:"patron")
+            sprite = SKSpriteNode(imageNamed:"patron")
             
             sprite.xScale = 0.5
             sprite.yScale = 0.5
-            sprite.position = location
-            self.addChild(sprite)
             let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
             do{
                 self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
@@ -57,6 +58,10 @@ class GameScene: SKScene {
             
             }
             
+            sprite.position = location
+            sprite.zPosition = CGFloat(self.Zcounter)
+            self.addChild(sprite)
+            Zcounter++
         }
     }
     

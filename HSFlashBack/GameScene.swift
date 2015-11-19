@@ -18,7 +18,27 @@ class GameScene: SKScene {
         
         for touch in touches {
             let location = touch.locationInNode(self)
+            let RNGesus = Int(arc4random_uniform(6) + 1)
             
+            if RNGesus == 1 {
+                
+                let sprite = SKSpriteNode(imageNamed:"goldenpatron")
+                
+                sprite.xScale = 0.5
+                sprite.yScale = 0.5
+                sprite.position = location
+                self.addChild(sprite)
+                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pile_on", ofType: "mp3")!)
+                do{
+                    self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.play()
+                    
+                }catch {
+                    print("Error getting the audio file")
+                }
+
+            } else {
             let sprite = SKSpriteNode(imageNamed:"patron")
             
             sprite.xScale = 0.5
@@ -35,7 +55,7 @@ class GameScene: SKScene {
                 print("Error getting the audio file")
             }
             
-            
+            }
             
         }
     }

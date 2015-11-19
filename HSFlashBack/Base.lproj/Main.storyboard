@@ -827,9 +827,7 @@
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g94-ye-wLd">
                                                 <rect key="frame" x="16" y="7" width="71" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Concede">
-                                                    <color key="titleColor" red="0.18823529410000001" green="0.87843137250000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
+                                                <state key="normal" title="Concede"/>
                                                 <connections>
                                                     <segue destination="O1I-XG-WbR" kind="show" id="rFQ-c0-rYV"/>
                                                 </connections>
@@ -905,7 +903,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="IXb-TM-Old"/>
         <segue reference="KMN-xN-BDx"/>
-        <segue reference="K4g-qR-uNj"/>
+        <segue reference="rFQ-c0-rYV"/>
         <segue reference="xaq-V3-vsN"/>
     </inferredMetricsTieBreakers>
 </document>

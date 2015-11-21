@@ -38,16 +38,18 @@ class MiracleRogueScene: SKScene {
             } else {
                 location = touch.locationInNode(self)
                 sprite = SKSpriteNode(imageNamed:"shadowstep")
-                sprite.xScale = 0.5
-                sprite.yScale = 0.5
+                sprite.xScale = 0.35
+                sprite.yScale = 0.35
                 previous.removeFromParent()
+                
             }
             
             sprite.position = location
             self.addChild(sprite)
             if Zcounter%2 == 0 {
-                SKAction.waitForDuration(1)
-                sprite.removeFromParent()
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC)), dispatch_get_main_queue()) {
+                    sprite.removeFromParent()
+                }
             }
             Zcounter++
         }

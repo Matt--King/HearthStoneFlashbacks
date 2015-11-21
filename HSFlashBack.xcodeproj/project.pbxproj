@@ -7,25 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA2801591BFD70F800729E12 /* Garrosh_greetings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA2801581BFD70F800729E12 /* Garrosh_greetings.mp3 */; };
-		BA28015B1BFD7B9200729E12 /* pile_on.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA28015A1BFD7B9200729E12 /* pile_on.mp3 */; };
-		BA5D930D1BF9406A00F79222 /* Anduin_Wrynn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */; };
 		BA5D930F1BF948DE00F79222 /* GPS_Table_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */; };
-		BA5D93111BF95C0500F79222 /* garrosh_gg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA5D93101BF95C0500F79222 /* garrosh_gg.mp3 */; };
-		BA7FA3371BF5965C00A40D4E /* Uther_Lightbringer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA3361BF5965C00A40D4E /* Uther_Lightbringer.mp3 */; };
-		BA7FA3391BF5966700A40D4E /* Garrosh_Hellscream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA3381BF5966700A40D4E /* Garrosh_Hellscream.mp3 */; };
-		BA7FA33B1BF5967000A40D4E /* Guldan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA33A1BF5967000A40D4E /* Guldan.mp3 */; };
-		BA7FA33D1BF5967B00A40D4E /* Jaina_Proudmoore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA33C1BF5967B00A40D4E /* Jaina_Proudmoore.mp3 */; };
-		BA7FA33F1BF5968900A40D4E /* Malfurion_Stormrage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA33E1BF5968900A40D4E /* Malfurion_Stormrage.mp3 */; };
-		BA7FA3411BF5969600A40D4E /* Rexxar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA3401BF5969600A40D4E /* Rexxar.mp3 */; };
-		BA7FA3431BF596BB00A40D4E /* Thrall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA3421BF596BB00A40D4E /* Thrall.mp3 */; };
-		BA7FA3451BF596C500A40D4E /* Valeera_Sanguinar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA7FA3441BF596C500A40D4E /* Valeera_Sanguinar.mp3 */; };
 		BABCFDC81BF82A06008E52A0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BABCFDC71BF82A06008E52A0 /* GameScene.sks */; };
 		BABCFDCA1BF82A1A008E52A0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCFDC91BF82A1A008E52A0 /* GameScene.swift */; };
 		BABCFDCC1BF82A9B008E52A0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCFDCB1BF82A9B008E52A0 /* GameViewController.swift */; };
 		BABCFDCE1BF82D5E008E52A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */; };
 		BABCFDD01BF82D64008E52A0 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABCFDCF1BF82D64008E52A0 /* GameController.framework */; };
-		BABCFDD71BF831B5008E52A0 /* GET_IN_HERE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BABCFDD61BF831B5008E52A0 /* GET_IN_HERE.mp3 */; };
 		BAD13E671BF2DD8400BC8AA8 /* Salt_Page_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E661BF2DD8400BC8AA8 /* Salt_Page_Controller.swift */; };
 		BAD13E691BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E681BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift */; };
 		BAD13E6B1BF2E0C500BC8AA8 /* GPS_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E6A1BF2E0C500BC8AA8 /* GPS_View_Controller.swift */; };
@@ -38,6 +25,7 @@
 		D0BE199B1BFD8BB5009E4BBA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BE198E1BFD8AFA009E4BBA /* Alamofire.framework */; };
 		D0BE199C1BFD8BB5009E4BBA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0BE198E1BFD8AFA009E4BBA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0BE19A11BFD8C49009E4BBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */; };
+		D0DEBC571C000E3F0012EA70 /* MP3s in Resources */ = {isa = PBXBuildFile; fileRef = D0DEBC561C000E3F0012EA70 /* MP3s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,25 +102,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BA2801581BFD70F800729E12 /* Garrosh_greetings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Garrosh_greetings.mp3; sourceTree = "<group>"; };
-		BA28015A1BFD7B9200729E12 /* pile_on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pile_on.mp3; path = ../pile_on.mp3; sourceTree = "<group>"; };
-		BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Anduin_Wrynn.mp3; sourceTree = "<group>"; };
 		BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_Table_Controller.swift; sourceTree = "<group>"; };
-		BA5D93101BF95C0500F79222 /* garrosh_gg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = garrosh_gg.mp3; sourceTree = "<group>"; };
-		BA7FA3361BF5965C00A40D4E /* Uther_Lightbringer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Uther_Lightbringer.mp3; sourceTree = "<group>"; };
-		BA7FA3381BF5966700A40D4E /* Garrosh_Hellscream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Garrosh_Hellscream.mp3; sourceTree = "<group>"; };
-		BA7FA33A1BF5967000A40D4E /* Guldan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Guldan.mp3; sourceTree = "<group>"; };
-		BA7FA33C1BF5967B00A40D4E /* Jaina_Proudmoore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jaina_Proudmoore.mp3; sourceTree = "<group>"; };
-		BA7FA33E1BF5968900A40D4E /* Malfurion_Stormrage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Malfurion_Stormrage.mp3; sourceTree = "<group>"; };
-		BA7FA3401BF5969600A40D4E /* Rexxar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rexxar.mp3; sourceTree = "<group>"; };
-		BA7FA3421BF596BB00A40D4E /* Thrall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Thrall.mp3; sourceTree = "<group>"; };
-		BA7FA3441BF596C500A40D4E /* Valeera_Sanguinar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Valeera_Sanguinar.mp3; sourceTree = "<group>"; };
 		BABCFDC71BF82A06008E52A0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		BABCFDC91BF82A1A008E52A0 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BABCFDCB1BF82A9B008E52A0 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BABCFDCF1BF82D64008E52A0 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
-		BABCFDD61BF831B5008E52A0 /* GET_IN_HERE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GET_IN_HERE.mp3; sourceTree = "<group>"; };
 		BAD13E661BF2DD8400BC8AA8 /* Salt_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salt_Page_Controller.swift; sourceTree = "<group>"; };
 		BAD13E681BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sim_Picker_Page_Controller.swift; sourceTree = "<group>"; };
 		BAD13E6A1BF2E0C500BC8AA8 /* GPS_View_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_View_Controller.swift; sourceTree = "<group>"; };
@@ -146,6 +121,7 @@
 		D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Search_Controller.swift; sourceTree = "<group>"; };
 		D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
+		D0DEBC561C000E3F0012EA70 /* MP3s */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MP3s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,19 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */,
-				BA5D93101BF95C0500F79222 /* garrosh_gg.mp3 */,
-				BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */,
-				BABCFDD61BF831B5008E52A0 /* GET_IN_HERE.mp3 */,
 				BABCFDCF1BF82D64008E52A0 /* GameController.framework */,
 				BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */,
-				BA7FA3441BF596C500A40D4E /* Valeera_Sanguinar.mp3 */,
-				BA7FA3421BF596BB00A40D4E /* Thrall.mp3 */,
-				BA7FA3401BF5969600A40D4E /* Rexxar.mp3 */,
-				BA7FA33E1BF5968900A40D4E /* Malfurion_Stormrage.mp3 */,
-				BA7FA33C1BF5967B00A40D4E /* Jaina_Proudmoore.mp3 */,
-				BA7FA33A1BF5967000A40D4E /* Guldan.mp3 */,
-				BA7FA3381BF5966700A40D4E /* Garrosh_Hellscream.mp3 */,
-				BA7FA3361BF5965C00A40D4E /* Uther_Lightbringer.mp3 */,
+				D0DEBC561C000E3F0012EA70 /* MP3s */,
 				BAFD05C51BE057BA00799FBD /* HSFlashBack */,
 				BAFD05C41BE057BA00799FBD /* Products */,
 			);
@@ -347,20 +313,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA28015B1BFD7B9200729E12 /* pile_on.mp3 in Resources */,
-				BA2801591BFD70F800729E12 /* Garrosh_greetings.mp3 in Resources */,
-				BA5D93111BF95C0500F79222 /* garrosh_gg.mp3 in Resources */,
-				BA5D930D1BF9406A00F79222 /* Anduin_Wrynn.mp3 in Resources */,
-				BABCFDD71BF831B5008E52A0 /* GET_IN_HERE.mp3 in Resources */,
-				BA7FA3391BF5966700A40D4E /* Garrosh_Hellscream.mp3 in Resources */,
-				BA7FA33B1BF5967000A40D4E /* Guldan.mp3 in Resources */,
-				BA7FA33D1BF5967B00A40D4E /* Jaina_Proudmoore.mp3 in Resources */,
+				D0DEBC571C000E3F0012EA70 /* MP3s in Resources */,
 				BABCFDC81BF82A06008E52A0 /* GameScene.sks in Resources */,
-				BA7FA33F1BF5968900A40D4E /* Malfurion_Stormrage.mp3 in Resources */,
-				BA7FA3411BF5969600A40D4E /* Rexxar.mp3 in Resources */,
-				BA7FA3431BF596BB00A40D4E /* Thrall.mp3 in Resources */,
-				BA7FA3371BF5965C00A40D4E /* Uther_Lightbringer.mp3 in Resources */,
-				BA7FA3451BF596C500A40D4E /* Valeera_Sanguinar.mp3 in Resources */,
 				BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */,
 				BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */,
 			);

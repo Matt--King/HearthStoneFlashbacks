@@ -19,6 +19,9 @@ class Card_Search: UIViewController {
     @IBOutlet weak var SearchField: UITextField!
     @IBOutlet weak var ArtistLabel: UILabel!
     @IBOutlet weak var FlavorLabel: UILabel!
+    
+    let mashape = "\"cardId\":\"EX1_572\",\"name\":\"Ysera\",\"cardSet\":\"Classic\",\"type\":\"Minion\",\"faction\":\"Neutral\",\"rarity\":\"Legendary\",\"cost\":9,\"attack\":4,\"health\":12,\"text\":\"At the end of your turn, add a Dream Card to your hand.\",\"flavor\":\"Ysera rules the Emerald Dream.  Which is some kind of green-mirror-version of the real world, or something?\",\"artist\":\"Gabor Szikszai\",\"collectible\":true,\"elite\":true,\"race\":\"Dragon\",\"img\":\"http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_572.png\",\"imgGold\":\"http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_572_premium.gif\",\"locale\":\"enUS\"}"    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)

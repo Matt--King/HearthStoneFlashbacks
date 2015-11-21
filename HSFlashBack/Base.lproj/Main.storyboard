@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-0I-kQc">
@@ -96,13 +96,22 @@
                     <view key="view" contentMode="scaleToFill" id="UZy-AP-aAk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-mH-lVv">
+                                <rect key="frame" x="39" y="28" width="242" height="54"/>
+                                <state key="normal" image="concede"/>
+                                <connections>
+                                    <segue destination="UQn-TF-rGs" kind="show" id="KKR-aA-Lhc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9as-ed-d4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1740" y="-2067"/>
+            <point key="canvasLocation" x="-1096" y="-2031"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="TA8-DZ-BMX">
@@ -135,11 +144,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s89-Uv-BKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1127" y="-1979"/>
+            <point key="canvasLocation" x="-1917" y="-2031"/>
         </scene>
         <!--Simulators Page-->
         <scene sceneID="dmx-U5-rfa">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yoL-Yg-hQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="UQn-TF-rGs" userLabel="Simulators Page" customClass="Simulators_Page" customModule="HSFlashBack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BgS-TL-6VY"/>
@@ -159,7 +169,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Back"/>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="IXb-TM-Old"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="sg1-nm-2Iu"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -177,6 +187,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISA-Wd-O3t">
                                 <rect key="frame" x="16" y="208" width="100" height="30"/>
                                 <state key="normal" title="Patron Warrior"/>
+                                <connections>
+                                    <segue destination="qfr-ba-b5S" kind="show" id="c8Y-VP-gdB"/>
+                                </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Valeera_Sanguinar" translatesAutoresizingMaskIntoConstraints="NO" id="wjW-eH-TVS">
                                 <rect key="frame" x="208" y="72" width="88" height="128"/>
@@ -189,10 +202,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtc-Ob-dMY">
                                 <rect key="frame" x="206" y="208" width="98" height="30"/>
                                 <state key="normal" title="Miracle Rogue"/>
+                                <connections>
+                                    <segue destination="psC-eo-vuw" kind="show" id="7oc-ad-EpZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUh-6a-6ms">
                                 <rect key="frame" x="101" y="430" width="119" height="30"/>
                                 <state key="normal" title="General Saltiness"/>
+                                <connections>
+                                    <segue destination="O1I-XG-WbR" kind="show" id="Mz9-aB-4NY"/>
+                                </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salt_Portrait" translatesAutoresizingMaskIntoConstraints="NO" id="XUK-7w-L53">
                                 <rect key="frame" x="116" y="294" width="88" height="128"/>
@@ -227,24 +246,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yoL-Yg-hQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="T43-ZJ-AP9">
-                    <connections>
-                        <segue destination="O1I-XG-WbR" kind="show" id="3tk-rL-RCj"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="r2A-Ho-gIH">
-                    <connections>
-                        <segue destination="qfr-ba-b5S" kind="show" id="xaq-V3-vsN"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Csg-jh-hqH">
-                    <connections>
-                        <segue destination="psC-eo-vuw" kind="show" id="uRl-q3-X4a"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1486" y="-1427"/>
+            <point key="canvasLocation" x="-1552" y="-1399"/>
         </scene>
         <!--Saltiness Simulator-->
         <scene sceneID="i5L-Ek-hXM">
@@ -629,11 +632,9 @@
                                                 <state key="normal" title="Back"/>
                                                 <connections>
                                                     <action selector="backCheck:" destination="vlm-b6-Yz7" eventType="touchUpInside" id="Z1Q-K8-7i5"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="8gD-e7-XHb"/>
                                                 </connections>
                                             </button>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="q4u-22-dc5"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -918,8 +919,8 @@
         <image name="wood" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rFQ-c0-rYV"/>
-        <segue reference="q4u-22-dc5"/>
-        <segue reference="XC2-HU-z2O"/>
+        <segue reference="hnX-SN-6bW"/>
+        <segue reference="Mz9-aB-4NY"/>
+        <segue reference="sg1-nm-2Iu"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -44,8 +44,8 @@ class GameViewController: UIViewController {
         let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("garrosh_gg", ofType: "mp3")!)
         do{
             self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
-            audioPlayer.prepareToPlay()
-            audioPlayer.play()
+            self.audioPlayer.prepareToPlay()
+            self.audioPlayer.play()
         }catch {
             print("Error getting the audio file")
         }

@@ -92,6 +92,7 @@ class Settings_Page: UIViewController, UIImagePickerControllerDelegate, UINaviga
         let screenShot = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         UIImageWriteToSavedPhotosAlbum(screenShot, self, "image:didFinishSavingWithError:contextInfo:", nil)
+        pictureTaken = false
         
     }
     

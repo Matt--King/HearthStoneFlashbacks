@@ -21,7 +21,7 @@ class MiracleRogueScene: SKScene {
         for touch in touches {
             var location = CGPoint()
             var sprite = SKSpriteNode()
-            if Zcounter%2 == 1 {
+            if Zcounter%3 == 1 {
                 location = CGPointMake(size.width/2, size.height/2)
                 sprite = SKSpriteNode(imageNamed:"Leeroy_Jenkins")
                 sprite.xScale = 0.50
@@ -35,6 +35,9 @@ class MiracleRogueScene: SKScene {
                     print("Error getting the audio file")
                 }
                 self.previous = sprite
+            } else if Zcounter%3 == 2 {
+                
+                
             } else {
                 location = touch.locationInNode(self)
                 sprite = SKSpriteNode(imageNamed:"shadowstep")
@@ -47,7 +50,7 @@ class MiracleRogueScene: SKScene {
             sprite.position = location
             self.addChild(sprite)
             if Zcounter%2 == 0 {
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * NSEC_PER_SEC)), dispatch_get_main_queue()) {
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/2)), dispatch_get_main_queue()) {
                     sprite.removeFromParent()
                 }
             }

@@ -255,6 +255,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
+
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yoL-Yg-hQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="XgL-QP-xcW">
                     <connections>
                         <segue destination="psC-eo-vuw" kind="show" id="MIi-Qx-Vg4"/>

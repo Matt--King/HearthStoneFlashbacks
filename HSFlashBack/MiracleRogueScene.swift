@@ -14,22 +14,19 @@ class MiracleRogueScene: SKScene {
     
     var audioPlayer: AVAudioPlayer!
     var Zcounter: Int = 1
-    
+    var previous:SKSpriteNode!
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
         
         for touch in touches {
-            let location = touch.locationInNode(self)
-            let RNGesus = Int(arc4random_uniform(6) + 1)
+            var location = CGPoint()
             var sprite = SKSpriteNode()
-            if RNGesus == 1 {
-                
-                sprite = SKSpriteNode(imageNamed:"goldenpatron")
-                let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-                sprite.runAction(SKAction.repeatActionForever(action))
-                sprite.xScale = 0.45
-                sprite.yScale = 0.45
-                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pile_on", ofType: "mp3")!)
+            if Zcounter%2 == 1 {
+                location = CGPointMake(size.width/2, size.height/2)
+                sprite = SKSpriteNode(imageNamed:"Leeroy_Jenkins")
+                sprite.xScale = 0.50
+                sprite.yScale = 0.50
+                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_Jenkins", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
                     audioPlayer.prepareToPlay()
@@ -37,25 +34,21 @@ class MiracleRogueScene: SKScene {
                 }catch {
                     print("Error getting the audio file")
                 }
-                
+                self.previous = sprite
             } else {
-                sprite = SKSpriteNode(imageNamed:"patron")
+                location = touch.locationInNode(self)
+                sprite = SKSpriteNode(imageNamed:"shadowstep")
                 sprite.xScale = 0.5
                 sprite.yScale = 0.5
-                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
-                do{
-                    self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
-                    audioPlayer.prepareToPlay()
-                    audioPlayer.play()
-                }catch {
-                    print("Error getting the audio file")
-                }
-                
+                previous.removeFromParent()
             }
             
             sprite.position = location
-            sprite.zPosition = CGFloat(self.Zcounter)
             self.addChild(sprite)
+            if Zcounter%2 == 0 {
+                SKAction.waitForDuration(1)
+                sprite.removeFromParent()
+            }
             Zcounter++
         }
     }

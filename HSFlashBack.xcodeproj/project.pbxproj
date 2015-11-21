@@ -26,6 +26,9 @@
 		BAC0D2421C0015A00040DDA8 /* Thrall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2411C0015A00040DDA8 /* Thrall.mp3 */; };
 		BAC0D2441C0015A50040DDA8 /* Uther_Lightbringer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2431C0015A50040DDA8 /* Uther_Lightbringer.mp3 */; };
 		BAC0D2461C0015A90040DDA8 /* Valeera_Sanguinar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2451C0015A90040DDA8 /* Valeera_Sanguinar.mp3 */; };
+		BAC0D24A1C0019110040DDA8 /* MiracleRogueScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC0D2491C0019110040DDA8 /* MiracleRogueScene.swift */; };
+		BAC0D2521C0019940040DDA8 /* MiracleRogueScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2511C0019940040DDA8 /* MiracleRogueScene.sks */; };
+		BAC0D2541C0019CA0040DDA8 /* MiracleRogueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC0D2531C0019CA0040DDA8 /* MiracleRogueController.swift */; };
 		BAD13E671BF2DD8400BC8AA8 /* Salt_Page_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E661BF2DD8400BC8AA8 /* Salt_Page_Controller.swift */; };
 		BAD13E691BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E681BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift */; };
 		BAD13E6B1BF2E0C500BC8AA8 /* GPS_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E6A1BF2E0C500BC8AA8 /* GPS_View_Controller.swift */; };
@@ -133,6 +136,9 @@
 		BAC0D2411C0015A00040DDA8 /* Thrall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Thrall.mp3; path = MP3s/Thrall.mp3; sourceTree = "<group>"; };
 		BAC0D2431C0015A50040DDA8 /* Uther_Lightbringer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Uther_Lightbringer.mp3; path = MP3s/Uther_Lightbringer.mp3; sourceTree = "<group>"; };
 		BAC0D2451C0015A90040DDA8 /* Valeera_Sanguinar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Valeera_Sanguinar.mp3; path = MP3s/Valeera_Sanguinar.mp3; sourceTree = "<group>"; };
+		BAC0D2491C0019110040DDA8 /* MiracleRogueScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiracleRogueScene.swift; sourceTree = "<group>"; };
+		BAC0D2511C0019940040DDA8 /* MiracleRogueScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MiracleRogueScene.sks; sourceTree = "<group>"; };
+		BAC0D2531C0019CA0040DDA8 /* MiracleRogueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiracleRogueController.swift; sourceTree = "<group>"; };
 		BAD13E661BF2DD8400BC8AA8 /* Salt_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salt_Page_Controller.swift; sourceTree = "<group>"; };
 		BAD13E681BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sim_Picker_Page_Controller.swift; sourceTree = "<group>"; };
 		BAD13E6A1BF2E0C500BC8AA8 /* GPS_View_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_View_Controller.swift; sourceTree = "<group>"; };
@@ -212,6 +218,9 @@
 				BABCFDCB1BF82A9B008E52A0 /* GameViewController.swift */,
 				BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */,
 				D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */,
+				BAC0D2491C0019110040DDA8 /* MiracleRogueScene.swift */,
+				BAC0D2511C0019940040DDA8 /* MiracleRogueScene.sks */,
+				BAC0D2531C0019CA0040DDA8 /* MiracleRogueController.swift */,
 			);
 			path = HSFlashBack;
 			sourceTree = "<group>";
@@ -349,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC0D2521C0019940040DDA8 /* MiracleRogueScene.sks in Resources */,
 				BAC0D23C1C0015920040DDA8 /* Malfurion_Stormrage.mp3 in Resources */,
 				BAC0D2321C00157B0040DDA8 /* Garrosh_greetings.mp3 in Resources */,
 				BAC0D2381C0015890040DDA8 /* Guldan.mp3 in Resources */,
@@ -375,9 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC0D24A1C0019110040DDA8 /* MiracleRogueScene.swift in Sources */,
 				BAD13E691BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift in Sources */,
 				BAFD05C91BE057BA00799FBD /* ViewController.swift in Sources */,
 				BAD13E6B1BF2E0C500BC8AA8 /* GPS_View_Controller.swift in Sources */,
+				BAC0D2541C0019CA0040DDA8 /* MiracleRogueController.swift in Sources */,
 				D0BE19A11BFD8C49009E4BBA /* SwiftyJSON.swift in Sources */,
 				BAD13E671BF2DD8400BC8AA8 /* Salt_Page_Controller.swift in Sources */,
 				BAD13E6D1BF2E63500BC8AA8 /* Settings_Controller.swift in Sources */,

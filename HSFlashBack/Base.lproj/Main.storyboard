@@ -150,7 +150,6 @@
         <!--Simulators Page-->
         <scene sceneID="dmx-U5-rfa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yoL-Yg-hQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="UQn-TF-rGs" userLabel="Simulators Page" customClass="Simulators_Page" customModule="HSFlashBack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BgS-TL-6VY"/>

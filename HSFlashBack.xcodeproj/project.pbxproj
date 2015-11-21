@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA2801591BFD70F800729E12 /* Garrosh_greetings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA2801581BFD70F800729E12 /* Garrosh_greetings.mp3 */; };
-		BA28015B1BFD7B9200729E12 /* pile_on.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA28015A1BFD7B9200729E12 /* pile_on.mp3 */; };
-		BA2801D01BFD97F600729E12 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2801C31BFD97E700729E12 /* Alamofire.framework */; };
-		BA2801D11BFD97F600729E12 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA2801C31BFD97E700729E12 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BA5D930D1BF9406A00F79222 /* Anduin_Wrynn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */; };
 		BA5D930F1BF948DE00F79222 /* GPS_Table_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */; };
 		BABCFDC81BF82A06008E52A0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BABCFDC71BF82A06008E52A0 /* GameScene.sks */; };
 		BABCFDCA1BF82A1A008E52A0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCFDC91BF82A1A008E52A0 /* GameScene.swift */; };
 		BABCFDCC1BF82A9B008E52A0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCFDCB1BF82A9B008E52A0 /* GameViewController.swift */; };
 		BABCFDCE1BF82D5E008E52A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */; };
 		BABCFDD01BF82D64008E52A0 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABCFDCF1BF82D64008E52A0 /* GameController.framework */; };
+		BAC0D2281C0015680040DDA8 /* Anduin_Wrynn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2271C0015680040DDA8 /* Anduin_Wrynn.mp3 */; };
+		BAC0D2301C0015770040DDA8 /* garrosh_gg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D22F1C0015770040DDA8 /* garrosh_gg.mp3 */; };
+		BAC0D2321C00157B0040DDA8 /* Garrosh_greetings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2311C00157B0040DDA8 /* Garrosh_greetings.mp3 */; };
+		BAC0D2341C00157F0040DDA8 /* Garrosh_Hellscream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2331C00157F0040DDA8 /* Garrosh_Hellscream.mp3 */; };
+		BAC0D2361C0015830040DDA8 /* GET_IN_HERE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2351C0015830040DDA8 /* GET_IN_HERE.mp3 */; };
+		BAC0D2381C0015890040DDA8 /* Guldan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2371C0015890040DDA8 /* Guldan.mp3 */; };
+		BAC0D23A1C00158E0040DDA8 /* Jaina_Proudmoore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2391C00158E0040DDA8 /* Jaina_Proudmoore.mp3 */; };
+		BAC0D23C1C0015920040DDA8 /* Malfurion_Stormrage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D23B1C0015920040DDA8 /* Malfurion_Stormrage.mp3 */; };
+		BAC0D23E1C0015960040DDA8 /* pile_on.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D23D1C0015960040DDA8 /* pile_on.mp3 */; };
+		BAC0D2401C00159C0040DDA8 /* Rexxar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D23F1C00159C0040DDA8 /* Rexxar.mp3 */; };
+		BAC0D2421C0015A00040DDA8 /* Thrall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2411C0015A00040DDA8 /* Thrall.mp3 */; };
+		BAC0D2441C0015A50040DDA8 /* Uther_Lightbringer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2431C0015A50040DDA8 /* Uther_Lightbringer.mp3 */; };
+		BAC0D2461C0015A90040DDA8 /* Valeera_Sanguinar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAC0D2451C0015A90040DDA8 /* Valeera_Sanguinar.mp3 */; };
 		BAD13E671BF2DD8400BC8AA8 /* Salt_Page_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E661BF2DD8400BC8AA8 /* Salt_Page_Controller.swift */; };
 		BAD13E691BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E681BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift */; };
 		BAD13E6B1BF2E0C500BC8AA8 /* GPS_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD13E6A1BF2E0C500BC8AA8 /* GPS_View_Controller.swift */; };
@@ -27,63 +35,64 @@
 		BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CA1BE057BA00799FBD /* Main.storyboard */; };
 		BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CD1BE057BA00799FBD /* Assets.xcassets */; };
 		D0BE19801BFD85B0009E4BBA /* Card_Search_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */; };
+		D0BE199B1BFD8BB5009E4BBA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BE198E1BFD8AFA009E4BBA /* Alamofire.framework */; };
+		D0BE199C1BFD8BB5009E4BBA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0BE198E1BFD8AFA009E4BBA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0BE19A11BFD8C49009E4BBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */; };
-		D0DEBC571C000E3F0012EA70 /* MP3s in Resources */ = {isa = PBXBuildFile; fileRef = D0DEBC561C000E3F0012EA70 /* MP3s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BA2801C21BFD97E700729E12 /* PBXContainerItemProxy */ = {
+		D0BE198D1BFD8AFA009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
-		BA2801C41BFD97E700729E12 /* PBXContainerItemProxy */ = {
+		D0BE198F1BFD8AFA009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS Tests";
 		};
-		BA2801C61BFD97E700729E12 /* PBXContainerItemProxy */ = {
+		D0BE19911BFD8AFA009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
 			remoteInfo = "Alamofire OSX";
 		};
-		BA2801C81BFD97E700729E12 /* PBXContainerItemProxy */ = {
+		D0BE19931BFD8AFA009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
 			remoteInfo = "Alamofire OSX Tests";
 		};
-		BA2801CA1BFD97E700729E12 /* PBXContainerItemProxy */ = {
+		D0BE19951BFD8AFA009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
 			remoteInfo = "Alamofire tvOS";
 		};
-		BA2801CC1BFD97E700729E12 /* PBXContainerItemProxy */ = {
+		D0BE19971BFD8AFA009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
 			remoteInfo = "Alamofire tvOS Tests";
 		};
-		BA2801CE1BFD97E700729E12 /* PBXContainerItemProxy */ = {
+		D0BE19991BFD8AFA009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
-		BA2801D21BFD97F600729E12 /* PBXContainerItemProxy */ = {
+		D0BE199D1BFD8BB5009E4BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+			containerPortal = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
@@ -91,13 +100,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BA2801D41BFD97F600729E12 /* Embed Frameworks */ = {
+		D0BE199F1BFD8BB5009E4BBA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BA2801D11BFD97F600729E12 /* Alamofire.framework in Embed Frameworks */,
+				D0BE199C1BFD8BB5009E4BBA /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,18 +114,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BA2801581BFD70F800729E12 /* Garrosh_greetings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Garrosh_greetings.mp3; sourceTree = "<group>"; };
-		BA28015A1BFD7B9200729E12 /* pile_on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pile_on.mp3; path = ../pile_on.mp3; sourceTree = "<group>"; };
-		BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		BA2801D51BFD98CA00729E12 /* Garrosh_greetings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Garrosh_greetings.mp3; sourceTree = "<group>"; };
-		BA2801D61BFD98E900729E12 /* pile_on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pile_on.mp3; path = ../pile_on.mp3; sourceTree = "<group>"; };
-		BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Anduin_Wrynn.mp3; sourceTree = "<group>"; };
 		BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_Table_Controller.swift; sourceTree = "<group>"; };
 		BABCFDC71BF82A06008E52A0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		BABCFDC91BF82A1A008E52A0 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BABCFDCB1BF82A9B008E52A0 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BABCFDCF1BF82D64008E52A0 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		BAC0D2271C0015680040DDA8 /* Anduin_Wrynn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Anduin_Wrynn.mp3; path = MP3s/Anduin_Wrynn.mp3; sourceTree = "<group>"; };
+		BAC0D22F1C0015770040DDA8 /* garrosh_gg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = garrosh_gg.mp3; path = MP3s/garrosh_gg.mp3; sourceTree = "<group>"; };
+		BAC0D2311C00157B0040DDA8 /* Garrosh_greetings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Garrosh_greetings.mp3; path = MP3s/Garrosh_greetings.mp3; sourceTree = "<group>"; };
+		BAC0D2331C00157F0040DDA8 /* Garrosh_Hellscream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Garrosh_Hellscream.mp3; path = MP3s/Garrosh_Hellscream.mp3; sourceTree = "<group>"; };
+		BAC0D2351C0015830040DDA8 /* GET_IN_HERE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = GET_IN_HERE.mp3; path = MP3s/GET_IN_HERE.mp3; sourceTree = "<group>"; };
+		BAC0D2371C0015890040DDA8 /* Guldan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Guldan.mp3; path = MP3s/Guldan.mp3; sourceTree = "<group>"; };
+		BAC0D2391C00158E0040DDA8 /* Jaina_Proudmoore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Jaina_Proudmoore.mp3; path = MP3s/Jaina_Proudmoore.mp3; sourceTree = "<group>"; };
+		BAC0D23B1C0015920040DDA8 /* Malfurion_Stormrage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Malfurion_Stormrage.mp3; path = MP3s/Malfurion_Stormrage.mp3; sourceTree = "<group>"; };
+		BAC0D23D1C0015960040DDA8 /* pile_on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pile_on.mp3; path = MP3s/pile_on.mp3; sourceTree = "<group>"; };
+		BAC0D23F1C00159C0040DDA8 /* Rexxar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rexxar.mp3; path = MP3s/Rexxar.mp3; sourceTree = "<group>"; };
+		BAC0D2411C0015A00040DDA8 /* Thrall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Thrall.mp3; path = MP3s/Thrall.mp3; sourceTree = "<group>"; };
+		BAC0D2431C0015A50040DDA8 /* Uther_Lightbringer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Uther_Lightbringer.mp3; path = MP3s/Uther_Lightbringer.mp3; sourceTree = "<group>"; };
+		BAC0D2451C0015A90040DDA8 /* Valeera_Sanguinar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Valeera_Sanguinar.mp3; path = MP3s/Valeera_Sanguinar.mp3; sourceTree = "<group>"; };
 		BAD13E661BF2DD8400BC8AA8 /* Salt_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salt_Page_Controller.swift; sourceTree = "<group>"; };
 		BAD13E681BF2DFB700BC8AA8 /* Sim_Picker_Page_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sim_Picker_Page_Controller.swift; sourceTree = "<group>"; };
 		BAD13E6A1BF2E0C500BC8AA8 /* GPS_View_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_View_Controller.swift; sourceTree = "<group>"; };
@@ -128,8 +144,8 @@
 		BAFD05CD1BE057BA00799FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFD05D21BE057BA00799FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Search_Controller.swift; sourceTree = "<group>"; };
+		D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
-		D0DEBC561C000E3F0012EA70 /* MP3s */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MP3s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABCFDD01BF82D64008E52A0 /* GameController.framework in Frameworks */,
-				BA2801D01BFD97F600729E12 /* Alamofire.framework in Frameworks */,
+				D0BE199B1BFD8BB5009E4BBA /* Alamofire.framework in Frameworks */,
 				BABCFDCE1BF82D5E008E52A0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,34 +162,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA2801B91BFD97E700729E12 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BA2801C31BFD97E700729E12 /* Alamofire.framework */,
-				BA2801C51BFD97E700729E12 /* Alamofire iOS Tests.xctest */,
-				BA2801C71BFD97E700729E12 /* Alamofire.framework */,
-				BA2801C91BFD97E700729E12 /* Alamofire OSX Tests.xctest */,
-				BA2801CB1BFD97E700729E12 /* Alamofire.framework */,
-				BA2801CD1BFD97E700729E12 /* Alamofire tvOS Tests.xctest */,
-				BA2801CF1BFD97E700729E12 /* Alamofire.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BAFD05BA1BE057BA00799FBD = {
 			isa = PBXGroup;
 			children = (
-				BA2801D61BFD98E900729E12 /* pile_on.mp3 */,
-				BA2801D51BFD98CA00729E12 /* Garrosh_greetings.mp3 */,
-				BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */,
-				BA5D93101BF95C0500F79222 /* garrosh_gg.mp3 */,
-				BA5D930C1BF9406A00F79222 /* Anduin_Wrynn.mp3 */,
-				BABCFDD61BF831B5008E52A0 /* GET_IN_HERE.mp3 */,
+				D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */,
 				BABCFDCF1BF82D64008E52A0 /* GameController.framework */,
 				BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */,
-				D0DEBC561C000E3F0012EA70 /* MP3s */,
 				BAFD05C51BE057BA00799FBD /* HSFlashBack */,
 				BAFD05C41BE057BA00799FBD /* Products */,
+				BAC0D2271C0015680040DDA8 /* Anduin_Wrynn.mp3 */,
+				BAC0D22F1C0015770040DDA8 /* garrosh_gg.mp3 */,
+				BAC0D2311C00157B0040DDA8 /* Garrosh_greetings.mp3 */,
+				BAC0D2331C00157F0040DDA8 /* Garrosh_Hellscream.mp3 */,
+				BAC0D2351C0015830040DDA8 /* GET_IN_HERE.mp3 */,
+				BAC0D2371C0015890040DDA8 /* Guldan.mp3 */,
+				BAC0D2391C00158E0040DDA8 /* Jaina_Proudmoore.mp3 */,
+				BAC0D23B1C0015920040DDA8 /* Malfurion_Stormrage.mp3 */,
+				BAC0D23D1C0015960040DDA8 /* pile_on.mp3 */,
+				BAC0D23F1C00159C0040DDA8 /* Rexxar.mp3 */,
+				BAC0D2411C0015A00040DDA8 /* Thrall.mp3 */,
+				BAC0D2431C0015A50040DDA8 /* Uther_Lightbringer.mp3 */,
+				BAC0D2451C0015A90040DDA8 /* Valeera_Sanguinar.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +216,20 @@
 			path = HSFlashBack;
 			sourceTree = "<group>";
 		};
+		D0BE19841BFD8AF9009E4BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE198E1BFD8AFA009E4BBA /* Alamofire.framework */,
+				D0BE19901BFD8AFA009E4BBA /* Alamofire iOS Tests.xctest */,
+				D0BE19921BFD8AFA009E4BBA /* Alamofire.framework */,
+				D0BE19941BFD8AFA009E4BBA /* Alamofire OSX Tests.xctest */,
+				D0BE19961BFD8AFA009E4BBA /* Alamofire.framework */,
+				D0BE19981BFD8AFA009E4BBA /* Alamofire tvOS Tests.xctest */,
+				D0BE199A1BFD8AFA009E4BBA /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,12 +240,12 @@
 				BAFD05BF1BE057BA00799FBD /* Sources */,
 				BAFD05C01BE057BA00799FBD /* Frameworks */,
 				BAFD05C11BE057BA00799FBD /* Resources */,
-				BA2801D41BFD97F600729E12 /* Embed Frameworks */,
+				D0BE199F1BFD8BB5009E4BBA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA2801D31BFD97F600729E12 /* PBXTargetDependency */,
+				D0BE199E1BFD8BB5009E4BBA /* PBXTargetDependency */,
 			);
 			name = HSFlashBack;
 			productName = HSFlashBack;
@@ -258,8 +281,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BA2801B91BFD97E700729E12 /* Products */;
-					ProjectRef = BA2801B81BFD97E700729E12 /* Alamofire.xcodeproj */;
+					ProductGroup = D0BE19841BFD8AF9009E4BBA /* Products */;
+					ProjectRef = D0BE19831BFD8AF9009E4BBA /* Alamofire.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -270,53 +293,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		BA2801C31BFD97E700729E12 /* Alamofire.framework */ = {
+		D0BE198E1BFD8AFA009E4BBA /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
-			remoteRef = BA2801C21BFD97E700729E12 /* PBXContainerItemProxy */;
+			remoteRef = D0BE198D1BFD8AFA009E4BBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA2801C51BFD97E700729E12 /* Alamofire iOS Tests.xctest */ = {
+		D0BE19901BFD8AFA009E4BBA /* Alamofire iOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Alamofire iOS Tests.xctest";
-			remoteRef = BA2801C41BFD97E700729E12 /* PBXContainerItemProxy */;
+			remoteRef = D0BE198F1BFD8AFA009E4BBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA2801C71BFD97E700729E12 /* Alamofire.framework */ = {
+		D0BE19921BFD8AFA009E4BBA /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
-			remoteRef = BA2801C61BFD97E700729E12 /* PBXContainerItemProxy */;
+			remoteRef = D0BE19911BFD8AFA009E4BBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA2801C91BFD97E700729E12 /* Alamofire OSX Tests.xctest */ = {
+		D0BE19941BFD8AFA009E4BBA /* Alamofire OSX Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Alamofire OSX Tests.xctest";
-			remoteRef = BA2801C81BFD97E700729E12 /* PBXContainerItemProxy */;
+			remoteRef = D0BE19931BFD8AFA009E4BBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA2801CB1BFD97E700729E12 /* Alamofire.framework */ = {
+		D0BE19961BFD8AFA009E4BBA /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
-			remoteRef = BA2801CA1BFD97E700729E12 /* PBXContainerItemProxy */;
+			remoteRef = D0BE19951BFD8AFA009E4BBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA2801CD1BFD97E700729E12 /* Alamofire tvOS Tests.xctest */ = {
+		D0BE19981BFD8AFA009E4BBA /* Alamofire tvOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = BA2801CC1BFD97E700729E12 /* PBXContainerItemProxy */;
+			remoteRef = D0BE19971BFD8AFA009E4BBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA2801CF1BFD97E700729E12 /* Alamofire.framework */ = {
+		D0BE199A1BFD8AFA009E4BBA /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
-			remoteRef = BA2801CE1BFD97E700729E12 /* PBXContainerItemProxy */;
+			remoteRef = D0BE19991BFD8AFA009E4BBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -326,10 +349,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DEBC571C000E3F0012EA70 /* MP3s in Resources */,
+				BAC0D23C1C0015920040DDA8 /* Malfurion_Stormrage.mp3 in Resources */,
+				BAC0D2321C00157B0040DDA8 /* Garrosh_greetings.mp3 in Resources */,
+				BAC0D2381C0015890040DDA8 /* Guldan.mp3 in Resources */,
 				BABCFDC81BF82A06008E52A0 /* GameScene.sks in Resources */,
 				BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */,
+				BAC0D2401C00159C0040DDA8 /* Rexxar.mp3 in Resources */,
+				BAC0D2281C0015680040DDA8 /* Anduin_Wrynn.mp3 in Resources */,
+				BAC0D2421C0015A00040DDA8 /* Thrall.mp3 in Resources */,
+				BAC0D2301C0015770040DDA8 /* garrosh_gg.mp3 in Resources */,
 				BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */,
+				BAC0D2461C0015A90040DDA8 /* Valeera_Sanguinar.mp3 in Resources */,
+				BAC0D2361C0015830040DDA8 /* GET_IN_HERE.mp3 in Resources */,
+				BAC0D23A1C00158E0040DDA8 /* Jaina_Proudmoore.mp3 in Resources */,
+				BAC0D2441C0015A50040DDA8 /* Uther_Lightbringer.mp3 in Resources */,
+				BAC0D2341C00157F0040DDA8 /* Garrosh_Hellscream.mp3 in Resources */,
+				BAC0D23E1C0015960040DDA8 /* pile_on.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +392,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA2801D31BFD97F600729E12 /* PBXTargetDependency */ = {
+		D0BE199E1BFD8BB5009E4BBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
-			targetProxy = BA2801D21BFD97F600729E12 /* PBXContainerItemProxy */;
+			targetProxy = D0BE199D1BFD8BB5009E4BBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -14,6 +14,11 @@ class Card_Search: UIViewController {
     
     var arrRes = [[String:AnyObject]]()
     
+    @IBOutlet weak var CardImageView: UIImageView!
+    @IBOutlet weak var SearchButton: UIButton!
+    @IBOutlet weak var SearchField: UITextField!
+    @IBOutlet weak var ArtistLabel: UILabel!
+    @IBOutlet weak var FlavorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)

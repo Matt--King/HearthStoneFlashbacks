@@ -21,7 +21,7 @@ class Card_Search: UIViewController {
 
         
         // Alamofire SwiftyJSON Test
-        /*
+        
         Alamofire.request(.GET, "http://api.androidhive.info/contacts/").responseJSON { (responseData) -> Void in
             let swiftyJsonVar = JSON(responseData.result.value!)
             
@@ -32,7 +32,7 @@ class Card_Search: UIViewController {
                 print(self.arrRes)
             }
         }
-        */
+
         
     }
     

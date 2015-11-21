@@ -13,7 +13,7 @@ import AVFoundation
 class MiracleRogueScene: SKScene {
     
     var audioPlayer: AVAudioPlayer!
-    var Zcounter: Int = 1
+    var counter: Int = 1
     var previous:SKSpriteNode!
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
@@ -21,7 +21,7 @@ class MiracleRogueScene: SKScene {
         for touch in touches {
             var location = CGPoint()
             var sprite = SKSpriteNode()
-            if Zcounter%3 == 1 {
+            if counter%3 == 1 {
                 location = CGPointMake(size.width/2, size.height/2)
                 sprite = SKSpriteNode(imageNamed:"Leeroy_Jenkins")
                 sprite.xScale = 0.50
@@ -35,8 +35,26 @@ class MiracleRogueScene: SKScene {
                     print("Error getting the audio file")
                 }
                 self.previous = sprite
-            } else if Zcounter%3 == 2 {
-                
+            } else if counter%3 == 2 {
+                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_Attack", ofType: "mp3")!)
+                do{
+                    self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.play()
+                    let attackLocation = CGPoint(x: size.width/2, y: 0)
+                    var moves: [SKAction] = [SKAction]()
+                    moves = [SKAction.moveTo(attackLocation, duration: 0.25),
+                             SKAction.moveTo(CGPoint(x: size.width/2, y: size.height/2), duration: 0.25) ]
+                    
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/2)), dispatch_get_main_queue()) {
+                        self.previous.runAction(SKAction.sequence(moves))
+                    }
+
+                    
+                    
+                }catch {
+                    print("Error getting the audio file")
+                }
                 
             } else {
                 location = touch.locationInNode(self)
@@ -49,12 +67,13 @@ class MiracleRogueScene: SKScene {
             
             sprite.position = location
             self.addChild(sprite)
-            if Zcounter%2 == 0 {
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/2)), dispatch_get_main_queue()) {
+            if counter%3 == 0 {
+                
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/4)), dispatch_get_main_queue()) {
                     sprite.removeFromParent()
                 }
             }
-            Zcounter++
+            counter++
         }
     }
     

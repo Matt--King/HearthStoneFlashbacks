@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2FC37C1C00334F00C1585D /* Leeroy_Attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */; };
 		BA5D930F1BF948DE00F79222 /* GPS_Table_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */; };
 		BAB876C81C00283F00EC1F7E /* Leeroy_Jenkins.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAB876C71C00283F00EC1F7E /* Leeroy_Jenkins.mp3 */; };
 		BABCFDC81BF82A06008E52A0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BABCFDC71BF82A06008E52A0 /* GameScene.sks */; };
@@ -118,6 +119,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_Attack.mp3; path = MP3s/Leeroy_Attack.mp3; sourceTree = "<group>"; };
 		BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_Table_Controller.swift; sourceTree = "<group>"; };
 		BAB876C71C00283F00EC1F7E /* Leeroy_Jenkins.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_Jenkins.mp3; path = MP3s/Leeroy_Jenkins.mp3; sourceTree = "<group>"; };
 		BABCFDC71BF82A06008E52A0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				BAC0D2351C0015830040DDA8 /* GET_IN_HERE.mp3 */,
 				BAC0D2371C0015890040DDA8 /* Guldan.mp3 */,
 				BAC0D2391C00158E0040DDA8 /* Jaina_Proudmoore.mp3 */,
+				BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */,
 				BAB876C71C00283F00EC1F7E /* Leeroy_Jenkins.mp3 */,
 				BAC0D23B1C0015920040DDA8 /* Malfurion_Stormrage.mp3 */,
 				BAC0D23D1C0015960040DDA8 /* pile_on.mp3 */,
@@ -361,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2FC37C1C00334F00C1585D /* Leeroy_Attack.mp3 in Resources */,
 				BAB876C81C00283F00EC1F7E /* Leeroy_Jenkins.mp3 in Resources */,
 				BAC0D2521C0019940040DDA8 /* MiracleRogueScene.sks in Resources */,
 				BAC0D23C1C0015920040DDA8 /* Malfurion_Stormrage.mp3 in Resources */,

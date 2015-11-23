@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 import MobileCoreServices
 
+var AlertsOn : Bool = true
+
 class Home_Page: UIViewController {
     
     override func viewDidLoad() {
@@ -29,14 +31,17 @@ class Home_Page: UIViewController {
 
 class Simulators_Page: UIViewController {
     
-   
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var helpAlertToggle: UISwitch!
+    @IBOutlet var garroshTap: UITapGestureRecognizer!
+    @IBOutlet var saltTap: UITapGestureRecognizer!
+    @IBOutlet var rogueTap: UITapGestureRecognizer!
+    @IBOutlet weak var garroshButton: UIButton!
+    @IBOutlet weak var rogueButton: UIButton!
+    @IBOutlet weak var saltButton: UIButton!
     
+    @IBOutlet weak var alertToggle: UISwitch!
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
+        alertToggle.setOn(AlertsOn, animated: false)
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -51,10 +56,9 @@ class Simulators_Page: UIViewController {
         navigationItem.title = "Test"
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if !(sender!.isEqual(backButton)){
-            
-        }
+    
+    @IBAction func SwitcherHit(sender: UISwitch) {
+        AlertsOn = alertToggle.on
     }
     
 

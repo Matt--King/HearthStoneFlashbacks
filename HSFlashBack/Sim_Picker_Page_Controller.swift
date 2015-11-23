@@ -16,7 +16,7 @@ class Salt_Sim_Page: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var launchButton: UIButton!
     @IBOutlet weak var picker: UIPickerView!
     var pickerData: [String] = [String]()
-    var alertsOn: Bool!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +60,7 @@ class Salt_Sim_Page: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         if (sender!.isEqual(self.launchButton)) {
             var saltVC = Salt_Page()
             saltVC = segue.destinationViewController as! Salt_Page
-            
+           
             var temp: String
             let input = picker.selectedRowInComponent(0)
             switch(input) {

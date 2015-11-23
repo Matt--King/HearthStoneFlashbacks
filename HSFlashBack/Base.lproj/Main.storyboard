@@ -200,7 +200,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Back"/>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="sg1-nm-2Iu"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="YpA-NM-Wtk"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -269,6 +269,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpn-0w-PiX">
                                 <rect key="frame" x="254" y="441" width="51" height="31"/>
+                                <connections>
+                                    <action selector="SwitcherHit:" destination="UQn-TF-rGs" eventType="valueChanged" id="d1K-9G-jW4"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -298,8 +301,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="backButton" destination="7YI-H0-Ssl" id="5qs-Ed-lWR"/>
-                        <outlet property="helpAlertToggle" destination="xpn-0w-PiX" id="REb-F5-jfN"/>
+                        <outlet property="alertToggle" destination="xpn-0w-PiX" id="a3b-f6-jF9"/>
+                        <outlet property="garroshButton" destination="ISA-Wd-O3t" id="W4M-VD-dH7"/>
+                        <outlet property="garroshTap" destination="XgL-QP-xcW" id="PI2-dG-l3j"/>
+                        <outlet property="rogueButton" destination="Vtc-Ob-dMY" id="RpA-XV-8MO"/>
+                        <outlet property="rogueTap" destination="tyT-mg-70J" id="vMh-5L-5IA"/>
+                        <outlet property="saltButton" destination="zUh-6a-6ms" id="DMF-3E-tAN"/>
+                        <outlet property="saltTap" destination="eRQ-44-f44" id="J1d-Wq-QeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoL-Yg-hQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1000,8 +1008,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="MIi-Qx-Vg4"/>
         <segue reference="XC2-HU-z2O"/>
-        <segue reference="sg1-nm-2Iu"/>
-        <segue reference="Mz9-aB-4NY"/>
+        <segue reference="YpA-NM-Wtk"/>
         <segue reference="c8Y-VP-gdB"/>
+        <segue reference="Mz9-aB-4NY"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -54,14 +54,15 @@ class GameViewController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        var alertController:UIAlertController?
-        alertController = UIAlertController(title: "Tap the Screen",
+        if AlertsOn {
+            var alertController:UIAlertController?
+            alertController = UIAlertController(title: "Tap the Screen",
             message: "Tap to truly experience saltiness", preferredStyle: .Alert)
         
-        let firstAction = UIAlertAction(title: "Sounds Good", style: UIAlertActionStyle.Cancel, handler: nil)
-        alertController!.addAction(firstAction)
-        self.presentViewController(alertController!, animated: true, completion: nil)
-        
+            let firstAction = UIAlertAction(title: "Sounds Good", style: UIAlertActionStyle.Cancel, handler: nil)
+            alertController!.addAction(firstAction)
+            self.presentViewController(alertController!, animated: true, completion: nil)
+        }
     }
     
     override func shouldAutorotate() -> Bool {

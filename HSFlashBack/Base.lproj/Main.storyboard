@@ -97,8 +97,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-mH-lVv">
-                                <rect key="frame" x="39" y="28" width="242" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-mH-lVv">
+                                <rect key="frame" x="39" y="20" width="242" height="54"/>
                                 <state key="normal" image="concede"/>
                                 <connections>
                                     <action selector="concedePress:" destination="psC-eo-vuw" eventType="touchUpInside" id="3GT-4d-dZ1"/>
@@ -107,6 +107,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eVK-mH-lVv" firstAttribute="top" secondItem="WMz-eE-pWk" secondAttribute="bottom" id="dLG-LU-7ig"/>
+                            <constraint firstItem="eVK-mH-lVv" firstAttribute="centerX" secondItem="UZy-AP-aAk" secondAttribute="centerX" id="egi-fg-1cy"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
@@ -951,10 +955,10 @@
         <image name="wood" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="MIi-Qx-Vg4"/>
+        <segue reference="XC2-HU-z2O"/>
         <segue reference="8gD-e7-XHb"/>
         <segue reference="Mz9-aB-4NY"/>
-        <segue reference="KKR-aA-Lhc"/>
-        <segue reference="MIi-Qx-Vg4"/>
         <segue reference="c8Y-VP-gdB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -24,8 +24,13 @@ class MiracleRogueScene: SKScene {
             if counter%3 == 1 {
                 location = CGPointMake(size.width/2, size.height/2)
                 sprite = SKSpriteNode(imageNamed:"Leeroy_Jenkins")
-                sprite.xScale = 0.50
-                sprite.yScale = 0.50
+                if(self.view!.frame.size.width < self.view!.frame.size.height) { //width < height means device is in portrait layout
+                    sprite.xScale = 0.50
+                    sprite.yScale = 0.50
+                } else {
+                    sprite.xScale = 0.25
+                    sprite.yScale = 0.25
+                }
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_Jenkins", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
@@ -41,9 +46,8 @@ class MiracleRogueScene: SKScene {
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
                     audioPlayer.prepareToPlay()
                     audioPlayer.play()
-                    let attackLocation = CGPoint(x: size.width/2, y: 0)
-                    var moves: [SKAction] = [SKAction]()
-                    moves = [SKAction.moveTo(attackLocation, duration: 0.25),
+                    let attackLocation:CGPoint = CGPoint(x: size.width/2, y: 0)
+                    let moves: [SKAction] = [SKAction.moveTo(attackLocation, duration: 0.25),
                              SKAction.moveTo(CGPoint(x: size.width/2, y: size.height/2), duration: 0.25) ]
                     
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/2)), dispatch_get_main_queue()) {
@@ -59,8 +63,14 @@ class MiracleRogueScene: SKScene {
             } else {
                 location = touch.locationInNode(self)
                 sprite = SKSpriteNode(imageNamed:"shadowstep")
-                sprite.xScale = 0.35
-                sprite.yScale = 0.35
+                if(self.view!.frame.size.width < self.view!.frame.size.height) { //width < height means device is in portrait layout
+                    sprite.xScale = 0.35
+                    sprite.yScale = 0.35
+                } else {
+                    sprite.xScale = 0.15
+                    sprite.yScale = 0.15
+                }
+
                 previous.removeFromParent()
                 
             }
@@ -93,4 +103,6 @@ class MiracleRogueScene: SKScene {
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
+    
+    
 }

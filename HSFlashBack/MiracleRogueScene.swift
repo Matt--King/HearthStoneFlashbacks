@@ -78,7 +78,7 @@ class MiracleRogueScene: SKScene {
             self.addChild(sprite)
             if counter%3 == 0 {
                 
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/4)), dispatch_get_main_queue()) {
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
                     sprite.removeFromParent()
                 }
             }

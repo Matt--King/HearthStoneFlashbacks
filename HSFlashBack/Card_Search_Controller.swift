@@ -28,6 +28,8 @@ class Card_Search: UIViewController {
     var imgURL:String = ""
     var imgGoldURL:String = ""
     
+    var placeholderImage:UIImage? = nil
+    
     let headers = [
         "X-Mashape-Key": "CRoLBfeR9UmshwZTcCyMTcwohJv6p1kZPEWjsnws6uslpg1S7S",
         "Accept": "application/json"
@@ -37,18 +39,17 @@ class Card_Search: UIViewController {
         var cardStr:String = SearchField.text!
         cardStr = cardStr.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         cardStr = cardStr.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!            //stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        /*
+        
         Alamofire.request( .GET, domain+cardStr+params, headers: headers).responseJSON {
             (responseData) -> Void in
             let swiftyResp = JSON(responseData.result.value!)
             let numObjs = swiftyResp.count
-            if numObjs == 2{ // bad call
+            if numObjs != 1{ // bad call
                 self.SearchField.endEditing(true)
-                self.SearchField.text = ""
                 
                 var alertController:UIAlertController?
                 alertController = UIAlertController(title: "Oops.",
-                    message: "That card could not be found :(", preferredStyle: .Alert)
+                    message: "That card could not be found or is not collectible", preferredStyle: .Alert)
                 let firstAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
                 alertController!.addAction(firstAction)
                 self.presentViewController(alertController!, animated: true, completion: nil)
@@ -59,30 +60,27 @@ class Card_Search: UIViewController {
                 self.imgGoldURL = swiftyResp[0]["imgGold"].stringValue
                 self.imgGoldURL = self.imgGoldURL.stringByReplacingOccurrencesOfString("http", withString: "https")
                 self.SearchField.endEditing(true)
-                self.SearchField.text = ""
                 self.displayResults()
             }
         }
-*/
+
     }
-    /*
+    
     func displayResults(){
-        self.ArtistLabel.text = self.artist
+        self.ArtistLabel.text = "Artist: " + self.artist
         self.FlavorLabel.text = self.flavor
-        let URL = NSURL(string: "https://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_572_premium.gif")!
-        let placeholderImage = UIImage(named: "blank")!
-        let image = CardImageView.image
-        Alamofire.request(.GET, URL).responseImage() {
-            (resp) in
-                print(resp)
-        }
+        let URL = NSURL(string: self.imgGoldURL)!
+        
+        self.CardImageView.af_setImageWithURL(URL, placeholderImage: self.placeholderImage)
         
         
     }
-    */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        placeholderImage = UIImage(named: "blank")!
+
         
         // Do any additional setup after loading the view, typically from a nib.
         

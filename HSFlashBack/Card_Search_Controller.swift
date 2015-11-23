@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 import Alamofire
 import AlamofireImage
-//import swiftyJSON
+import SystemConfiguration
+
 
 class Card_Search: UIViewController {
     
@@ -36,34 +37,44 @@ class Card_Search: UIViewController {
     ]
     
     @IBAction func search(sender: UITextField) {
-        var cardStr:String = SearchField.text!
-        cardStr = cardStr.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        cardStr = cardStr.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!            //stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        if (connectedToNetwork()) {
+            var cardStr:String = SearchField.text!
+            cardStr = cardStr.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+            cardStr = cardStr.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!            //stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
-        Alamofire.request( .GET, domain+cardStr+params, headers: headers).responseJSON {
-            (responseData) -> Void in
-            let swiftyResp = JSON(responseData.result.value!)
-            let numObjs = swiftyResp.count
-            if numObjs != 1{ // bad call
-                self.SearchField.endEditing(true)
+            Alamofire.request( .GET, domain+cardStr+params, headers: headers).responseJSON {
+                (responseData) -> Void in
+                let swiftyResp = JSON(responseData.result.value!)
+            
+                let numObjs = swiftyResp.count
+                if numObjs != 1{ // bad call
+                    self.SearchField.endEditing(true)
                 
-                var alertController:UIAlertController?
-                alertController = UIAlertController(title: "Oops.",
+                    var alertController:UIAlertController?
+                    alertController = UIAlertController(title: "Oops.",
                     message: "That card could not be found or is not collectible", preferredStyle: .Alert)
-                let firstAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
-                alertController!.addAction(firstAction)
-                self.presentViewController(alertController!, animated: true, completion: nil)
+                    let firstAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
+                    alertController!.addAction(firstAction)
+                    self.presentViewController(alertController!, animated: true, completion: nil)
                 
-            } else {
-                self.artist = swiftyResp[0]["artist"].stringValue
-                self.flavor = swiftyResp[0]["flavor"].stringValue
-                self.imgGoldURL = swiftyResp[0]["imgGold"].stringValue
-                self.imgGoldURL = self.imgGoldURL.stringByReplacingOccurrencesOfString("http", withString: "https")
-                self.SearchField.endEditing(true)
-                self.displayResults()
+                } else {
+                    self.artist = swiftyResp[0]["artist"].stringValue
+                    self.flavor = swiftyResp[0]["flavor"].stringValue
+                    self.imgGoldURL = swiftyResp[0]["imgGold"].stringValue
+                    self.imgGoldURL = self.imgGoldURL.stringByReplacingOccurrencesOfString("http", withString: "https")
+                    self.SearchField.endEditing(true)
+                    self.displayResults()
+                }
             }
-        }
+        } else {
+            var alertController:UIAlertController?
+            alertController = UIAlertController(title: "We can't access the Internet.",
+                message: "Make sure your device is connected to the Internet", preferredStyle: .Alert)
+            let firstAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
+            alertController!.addAction(firstAction)
+            self.presentViewController(alertController!, animated: true, completion: nil)
 
+        }
     }
     
     func displayResults(){
@@ -101,6 +112,29 @@ class Card_Search: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func connectedToNetwork() -> Bool {
+        
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(sizeofValue(zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        guard let defaultRouteReachability = withUnsafePointer(&zeroAddress, {
+            SCNetworkReachabilityCreateWithAddress(nil, UnsafePointer($0))
+        }) else {
+            return false
+        }
+        
+        var flags : SCNetworkReachabilityFlags = []
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) {
+            return false
+        }
+        
+        let isReachable = flags.contains(.Reachable)
+        let needsConnection = flags.contains(.ConnectionRequired)
+        return (isReachable && !needsConnection)
     }
 }
     

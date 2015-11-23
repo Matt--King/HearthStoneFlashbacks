@@ -74,4 +74,15 @@ class GameScene: SKScene {
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
+    
+    override func didChangeSize(oldSize: CGSize) {
+        for node in children {
+            let x = node.position.x / oldSize.width * self.frame.width;
+            let y = node.position.y / oldSize.height * self.frame.height;
+            
+            let newPosition = CGPoint(x: x, y: y);
+            node.position = newPosition;
+            
+        }
+    }
 }

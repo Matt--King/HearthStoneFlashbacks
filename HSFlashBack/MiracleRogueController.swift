@@ -17,6 +17,7 @@ import AVFoundation
 class MiracleRogueController: UIViewController {
     var audioPlayer:AVAudioPlayer!
     
+    var alertsOn: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()

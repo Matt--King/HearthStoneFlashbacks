@@ -11,7 +11,6 @@
 import SpriteKit
 import AVFoundation
 class MiracleRogueScene: SKScene {
-    
     var audioPlayer: AVAudioPlayer!
     var counter: Int = 1
     var previous:SKSpriteNode!

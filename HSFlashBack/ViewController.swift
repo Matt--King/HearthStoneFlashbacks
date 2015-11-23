@@ -30,7 +30,12 @@ class Home_Page: UIViewController {
 class Simulators_Page: UIViewController {
     
    
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var helpAlertToggle: UISwitch!
+    
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         // Do any additional setup after loading the view, typically from a nib.
@@ -46,7 +51,11 @@ class Simulators_Page: UIViewController {
         navigationItem.title = "Test"
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if !(sender!.isEqual(backButton)){
+            
+        }
+    }
     
 
 }

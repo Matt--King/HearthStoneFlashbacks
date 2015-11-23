@@ -17,6 +17,7 @@ class Salt_Page: UIViewController {
     @IBOutlet weak var heroPortrait: UIImageView!
     var heroString: String!
     var audioPlayer: AVAudioPlayer!
+    var alertsOn: Bool!
     
     
     override func viewDidAppear(animated: Bool)

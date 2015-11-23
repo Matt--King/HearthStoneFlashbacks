@@ -15,6 +15,7 @@ import AVFoundation
 
 class GameViewController: UIViewController {  
     var audioPlayer:AVAudioPlayer!
+    var alertsOn: Bool!
     
     
     override func viewDidLoad() {
@@ -83,5 +84,7 @@ class GameViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
+    
 }
 

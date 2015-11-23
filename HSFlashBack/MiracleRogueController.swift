@@ -17,6 +17,7 @@ import AVFoundation
 class MiracleRogueController: UIViewController {
     var audioPlayer:AVAudioPlayer!
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class MiracleRogueController: UIViewController {
         skView.ignoresSiblingOrder = true
         scene.scaleMode = .ResizeFill
         skView.presentScene(scene)
-        
+       
         self.audioPlayer = AVAudioPlayer()
         let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Valeera_Sanguinar", ofType: "mp3")!)
         do{
@@ -55,14 +56,16 @@ class MiracleRogueController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        var alertController:UIAlertController?
-        alertController = UIAlertController(title: "Tap the Screen",
+        
+        if AlertsOn {
+            var alertController:UIAlertController?
+            alertController = UIAlertController(title: "Tap the Screen",
             message: "Tap once to let the salt flow through you", preferredStyle: .Alert)
         
-        let firstAction = UIAlertAction(title: "Sounds Good", style: UIAlertActionStyle.Cancel, handler: nil)
-        alertController!.addAction(firstAction)
-        self.presentViewController(alertController!, animated: true, completion: nil)
-        
+            let firstAction = UIAlertAction(title: "Sounds Good", style: UIAlertActionStyle.Cancel, handler:    nil)
+            alertController!.addAction(firstAction)
+            self.presentViewController(alertController!, animated: true, completion: nil)
+        }
     }
     
     override func shouldAutorotate() -> Bool {

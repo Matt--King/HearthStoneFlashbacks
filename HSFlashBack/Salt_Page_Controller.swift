@@ -17,12 +17,13 @@ class Salt_Page: UIViewController {
     @IBOutlet weak var heroPortrait: UIImageView!
     var heroString: String!
     var audioPlayer: AVAudioPlayer!
+   
     
     
     override func viewDidAppear(animated: Bool)
     {
         super.viewDidAppear(animated)
-        
+        if AlertsOn {
         var alertController:UIAlertController?
         alertController = UIAlertController(title: "Tap the Screen",
             message: "Tap to truly experience saltiness", preferredStyle: .Alert)
@@ -30,7 +31,7 @@ class Salt_Page: UIViewController {
         let firstAction = UIAlertAction(title: "Sounds Good", style: UIAlertActionStyle.Cancel, handler: nil)
         alertController!.addAction(firstAction)
         self.presentViewController(alertController!, animated: true, completion: nil)
-        
+        }
     }
     
     

@@ -28,6 +28,7 @@ class Card_Search: UIViewController {
     var flavor:String = ""
     var imgURL:String = ""
     var imgGoldURL:String = ""
+    var lastStr = ""
     
     var placeholderImage:UIImage? = nil
     
@@ -39,6 +40,11 @@ class Card_Search: UIViewController {
     @IBAction func search(sender: UITextField) {
         if (connectedToNetwork()) {
             var cardStr:String = SearchField.text!
+            if (lastStr.isEqual(cardStr)){
+                self.SearchField.endEditing(true)
+                return
+            }
+            lastStr = cardStr
             cardStr = cardStr.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
             cardStr = cardStr.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!            //stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
@@ -77,15 +83,23 @@ class Card_Search: UIViewController {
         }
     }
     
+
     func displayResults(){
+        //var uimg:UIImage? = nil
         self.ArtistLabel.text = "Artist: " + self.artist
         self.FlavorLabel.text = self.flavor
         let URL = NSURL(string: self.imgGoldURL)!
         
-        self.CardImageView.af_setImageWithURL(URL, placeholderImage: self.placeholderImage)
-        
-        
+        Alamofire.request(.GET, URL)
+            .responseImage { response in
+                self.CardImageView.image = UIImage.gifWithData(response.data!)              
+        }
     }
+    
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+        self.SearchField.endEditing(true)
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -114,7 +128,7 @@ class Card_Search: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // help from https://github.com/Isuru-Nanayakkara/Reach/blob/master/Reach-swift2.0/Reach.swift
     func connectedToNetwork() -> Bool {
         
         var zeroAddress = sockaddr_in()

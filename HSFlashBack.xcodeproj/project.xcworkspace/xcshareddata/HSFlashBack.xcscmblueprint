@@ -5,11 +5,13 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "44DE21E94D66DB2B69416997B96F9436A46E9A99" : 0,
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 0,
     "67620B5EFA902936DF04070AF595B76AB0333747" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "532FAD44-FC05-4CEC-936B-0896D89CD931",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "44DE21E94D66DB2B69416997B96F9436A46E9A99" : "HearthStoneFlashbacks\/",
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "HearthStoneFlashbacks\/AlamofireImage\/",
     "67620B5EFA902936DF04070AF595B76AB0333747" : "HearthStoneFlashbacks\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "HSFlashBack",
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/AlamofireImage",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86"
     }
   ]
 }

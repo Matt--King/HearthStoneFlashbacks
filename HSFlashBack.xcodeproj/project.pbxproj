@@ -41,8 +41,6 @@
 		BAFD05C91BE057BA00799FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD05C81BE057BA00799FBD /* ViewController.swift */; };
 		BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CA1BE057BA00799FBD /* Main.storyboard */; };
 		BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CD1BE057BA00799FBD /* Assets.xcassets */; };
-		D09749931C02E6A7006D8DB2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09749921C02E6A7006D8DB2 /* Alamofire.framework */; };
-		D09749941C02E6A7006D8DB2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09749921C02E6A7006D8DB2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0BE19801BFD85B0009E4BBA /* Card_Search_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */; };
 		D0BE19A11BFD8C49009E4BBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */; };
 		D0F333F71C02D6330056AA31 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */; };
@@ -115,7 +113,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BAAA6FC41C02DC5800685BF6 /* AlamofireImage.framework in Embed Frameworks */,
-				D09749941C02E6A7006D8DB2 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,7 +155,6 @@
 		BAFD05CB1BE057BA00799FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFD05CD1BE057BA00799FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFD05D21BE057BA00799FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D09749921C02E6A7006D8DB2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/ahs2hd/Library/Developer/Xcode/DerivedData/HSFlashBack-ejpyvtejjvtlhjbbxbiofwrucmtt/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<absolute>"; };
 		D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Search_Controller.swift; sourceTree = "<group>"; };
 		D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = SOURCE_ROOT; };
@@ -172,7 +168,6 @@
 				BAAA6FC31C02DC5800685BF6 /* AlamofireImage.framework in Frameworks */,
 				BABCFDD01BF82D64008E52A0 /* GameController.framework in Frameworks */,
 				BABCFDCE1BF82D5E008E52A0 /* AVFoundation.framework in Frameworks */,
-				D09749931C02E6A7006D8DB2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +191,6 @@
 		BAFD05BA1BE057BA00799FBD = {
 			isa = PBXGroup;
 			children = (
-				D09749921C02E6A7006D8DB2 /* Alamofire.framework */,
 				BAAA6FA61C02DB3000685BF6 /* AlamofireImage.xcodeproj */,
 				BABCFDCF1BF82D64008E52A0 /* GameController.framework */,
 				BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */,

@@ -22,9 +22,16 @@ class Settings_Page: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     // Share App Feature
     @IBAction func showShare(sender: UIButton) {
-        let firstActivityItem = "I'm loving the Hearthstone Flashbacks App!"
+        let firstActivityItem = "I'm loving the Hearthstone Flashbacks App! Look at my custom hero portrait!"
         
-        let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [firstActivityItem], applicationActivities: nil)
+        // access big view
+        // turn view into uiima
+        UIGraphicsBeginImageContext(heroPortrait.bounds.size);
+        heroPortrait.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let screenShot = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    
+        let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [firstActivityItem, screenShot], applicationActivities: nil)
         
         self.presentViewController(activityViewController, animated: true, completion: nil)
     }

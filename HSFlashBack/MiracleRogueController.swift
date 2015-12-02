@@ -17,8 +17,6 @@ import AVFoundation
 class MiracleRogueController: UIViewController {
     var audioPlayer:AVAudioPlayer!
     
-   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,15 +67,11 @@ class MiracleRogueController: UIViewController {
     }
     
     override func shouldAutorotate() -> Bool {
-        return true
+        return false
     }
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return .AllButUpsideDown
-        } else {
-            return .All
-        }
+        return .Landscape
     }
     
     override func didReceiveMemoryWarning() {

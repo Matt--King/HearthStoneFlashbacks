@@ -42,7 +42,7 @@ class MiracleRogueController: UIViewController {
     @IBAction func concedePress(sender: UIButton) {
         
         self.audioPlayer = AVAudioPlayer()
-        let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Valeera_Sanguinar", ofType: "mp3")!)
+        let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("rogue_gg", ofType: "mp3")!)
         do{
             self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
             self.audioPlayer.prepareToPlay()
@@ -58,7 +58,7 @@ class MiracleRogueController: UIViewController {
         if AlertsOn {
             var alertController:UIAlertController?
             alertController = UIAlertController(title: "Tap the Screen",
-            message: "Tap once to let the salt flow through you", preferredStyle: .Alert)
+            message: "Tap to let the salt flow through you", preferredStyle: .Alert)
         
             let firstAction = UIAlertAction(title: "Sounds Good", style: UIAlertActionStyle.Cancel, handler:    nil)
             alertController!.addAction(firstAction)

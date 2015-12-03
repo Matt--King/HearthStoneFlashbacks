@@ -1,1 +1,3 @@
 git clone --recursive https://github.com/Matt--King/HearthStoneFlashbacks.git
+# make sure to change build settings on AFI and AF to 9.1
+# make sure to change AF location to "relative to group"

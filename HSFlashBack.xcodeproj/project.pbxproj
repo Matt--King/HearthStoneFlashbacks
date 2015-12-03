@@ -43,6 +43,8 @@
 		BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CD1BE057BA00799FBD /* Assets.xcassets */; };
 		D02D42CA1C0FAAD800C21940 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02D42C91C0FAAD800C21940 /* Alamofire.framework */; };
 		D02D42CB1C0FAAD800C21940 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D02D42C91C0FAAD800C21940 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D02D42CE1C0FBC8A00C21940 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */; };
+		D02D42CF1C0FBC8A00C21940 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D02D42CD1C0FBC8A00C21940 /* spark.png */; };
 		D0BE19801BFD85B0009E4BBA /* Card_Search_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */; };
 		D0BE19A11BFD8C49009E4BBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */; };
 		D0F333F71C02D6330056AA31 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */; };
@@ -159,6 +161,8 @@
 		BAFD05CD1BE057BA00799FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFD05D21BE057BA00799FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D02D42C91C0FAAD800C21940 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-ejpyvtejjvtlhjbbxbiofwrucmtt/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		D02D42CD1C0FBC8A00C21940 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Search_Controller.swift; sourceTree = "<group>"; };
 		D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = SOURCE_ROOT; };
@@ -250,6 +254,8 @@
 				BAC0D2491C0019110040DDA8 /* MiracleRogueScene.swift */,
 				BAC0D2511C0019940040DDA8 /* MiracleRogueScene.sks */,
 				BAC0D2531C0019CA0040DDA8 /* MiracleRogueController.swift */,
+				D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */,
+				D02D42CD1C0FBC8A00C21940 /* spark.png */,
 			);
 			path = HSFlashBack;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */,
 				BAC0D2401C00159C0040DDA8 /* Rexxar.mp3 in Resources */,
 				BAC0D2281C0015680040DDA8 /* Anduin_Wrynn.mp3 in Resources */,
+				D02D42CF1C0FBC8A00C21940 /* spark.png in Resources */,
 				BAC0D2421C0015A00040DDA8 /* Thrall.mp3 in Resources */,
 				BAC0D2301C0015770040DDA8 /* garrosh_gg.mp3 in Resources */,
 				BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */,
@@ -392,6 +399,7 @@
 				BAC0D2441C0015A50040DDA8 /* Uther_Lightbringer.mp3 in Resources */,
 				BAC0D2341C00157F0040DDA8 /* Garrosh_Hellscream.mp3 in Resources */,
 				BAC0D23E1C0015960040DDA8 /* pile_on.mp3 in Resources */,
+				D02D42CE1C0FBC8A00C21940 /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

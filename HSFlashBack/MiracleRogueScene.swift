@@ -17,19 +17,29 @@ class MiracleRogueScene: SKScene {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
         
+        // 1. Create a physics body that borders the screen
+        let borderBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        // 2. Set the friction of that physicsBody to 0
+        borderBody.friction = 0
+        // 3. Set physicsBody of scene to borderBody
+        self.physicsBody = borderBody
         for touch in touches {
             var location = CGPoint()
             var sprite = SKSpriteNode()
             if counter%3 == 1 {
                 location = CGPointMake(size.width/2, size.height/2)
                 sprite = SKSpriteNode(imageNamed:"Leeroy_Jenkins")
-                if(self.view!.frame.size.width < self.view!.frame.size.height) { //width < height means device is in portrait layout
-                    sprite.xScale = 0.50
-                    sprite.yScale = 0.50
-                } else {
-                    sprite.xScale = 0.25
-                    sprite.yScale = 0.25
-                }
+                
+                sprite.xScale = 0.55
+                sprite.yScale = 0.55
+                
+                let moves: [SKAction] = [
+                    SKAction.rotateToAngle(CGFloat(M_PI_4), duration: 0.5),
+                    SKAction.rotateToAngle(CGFloat(-(M_PI_4)), duration: 0.5)
+                ]
+                sprite.runAction(SKAction.repeatActionForever(SKAction.sequence(moves)))
+                
+                
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_Jenkins", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
@@ -45,13 +55,19 @@ class MiracleRogueScene: SKScene {
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
                     audioPlayer.prepareToPlay()
                     audioPlayer.play()
+                    
+                    /*
                     let attackLocation:CGPoint = CGPoint(x: size.width/2, y: 0)
                     let moves: [SKAction] = [SKAction.moveTo(attackLocation, duration: 0.25),
                              SKAction.moveTo(CGPoint(x: size.width/2, y: size.height/2), duration: 0.25) ]
                     
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/2)), dispatch_get_main_queue()) {
                         self.previous.runAction(SKAction.sequence(moves))
-                    }
+                    
+                    */
+                    
+                    sprite.physicsBody!.applyImpulse(CGVectorMake(5, -15))
+                
 
                     
                     
@@ -62,13 +78,9 @@ class MiracleRogueScene: SKScene {
             } else {
                 location = touch.locationInNode(self)
                 sprite = SKSpriteNode(imageNamed:"shadowstep")
-                if(self.view!.frame.size.width < self.view!.frame.size.height) { //width < height means device is in portrait layout
-                    sprite.xScale = 0.35
-                    sprite.yScale = 0.35
-                } else {
-                    sprite.xScale = 0.15
-                    sprite.yScale = 0.15
-                }
+                sprite.xScale = 0.35
+                sprite.yScale = 0.35
+                
 
                 previous.removeFromParent()
                 

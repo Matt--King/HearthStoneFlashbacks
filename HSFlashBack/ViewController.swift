@@ -57,6 +57,14 @@ class Simulators_Page: UIViewController {
     }
     
     
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Landscape
+    }
+    
     @IBAction func SwitcherHit(sender: UISwitch) {
         AlertsOn = alertToggle.on
     }

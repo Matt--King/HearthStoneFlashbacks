@@ -25,8 +25,8 @@ class GameScene: SKScene {
                 sprite = SKSpriteNode(imageNamed:"goldenpatron")
                 let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
                 sprite.runAction(SKAction.repeatActionForever(action))
-                sprite.xScale = 0.45
-                sprite.yScale = 0.45
+                sprite.xScale = 0.30
+                sprite.yScale = 0.30
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pile_on", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
@@ -36,10 +36,34 @@ class GameScene: SKScene {
                     print("Error getting the audio file")
                 }
 
+            }
+            
+            else if RNGesus == 7 {
+                sprite = SKSpriteNode(imageNamed:"patron")
+                sprite.xScale = 0.35
+                sprite.yScale = 0.35
+                
+                /*
+                if let particle = SKEmitterNode(fileNamed: "MyParticle"){
+                particle.position = touch.locationInNode(self)
+                particle.zPosition = CGFloat(self.Zcounter)
+                addChild(particle)
+                }
+                */
+                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
+                do{
+                    self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.play()
+                }catch {
+                    print("Error getting the audio file")
+                }
+                
+                
             } else {
                 sprite = SKSpriteNode(imageNamed:"patron")
-                sprite.xScale = 0.5
-                sprite.yScale = 0.5
+                sprite.xScale = 0.35
+                sprite.yScale = 0.35
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)

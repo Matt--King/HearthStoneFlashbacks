@@ -17,12 +17,6 @@ class MiracleRogueScene: SKScene {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
         
-        // 1. Create a physics body that borders the screen
-        let borderBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
-        // 2. Set the friction of that physicsBody to 0
-        borderBody.friction = 0
-        // 3. Set physicsBody of scene to borderBody
-        self.physicsBody = borderBody
         for touch in touches {
             var location = CGPoint()
             var sprite = SKSpriteNode()
@@ -30,8 +24,8 @@ class MiracleRogueScene: SKScene {
                 location = CGPointMake(size.width/2, size.height/2)
                 sprite = SKSpriteNode(imageNamed:"Leeroy_Jenkins")
                 
-                sprite.xScale = 0.55
-                sprite.yScale = 0.55
+                sprite.xScale = 0.5
+                sprite.yScale = 0.5
                 
                 let moves: [SKAction] = [
                     SKAction.rotateToAngle(CGFloat(M_PI_4), duration: 0.5),
@@ -56,22 +50,44 @@ class MiracleRogueScene: SKScene {
                     audioPlayer.prepareToPlay()
                     audioPlayer.play()
                     
-                    /*
-                    let attackLocation:CGPoint = CGPoint(x: size.width/2, y: 0)
-                    let moves: [SKAction] = [SKAction.moveTo(attackLocation, duration: 0.25),
-                             SKAction.moveTo(CGPoint(x: size.width/2, y: size.height/2), duration: 0.25) ]
+                    Int(arc4random_uniform(8) + 1)
+                    var points:[CGPoint] = [
+                        CGPoint(x: 0, y: 0),
+                        CGPoint(x: 0, y: 0),
+                        CGPoint(x: 0, y: 0),
+                        CGPoint(x: 0, y: 0),
+                        CGPoint(x: 0, y: 0),
+                        CGPoint(x: 0, y: 0),
+                        CGPoint(x: 0, y: 0)
+                    ]
                     
-                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC/2)), dispatch_get_main_queue()) {
-                        self.previous.runAction(SKAction.sequence(moves))
+                    let wid:UInt32 = (UInt32)(size.width)
+                    let len:UInt32 = (UInt32)(size.height)
                     
-                    */
-                    
-                    sprite.physicsBody!.applyImpulse(CGVectorMake(5, -15))
-                
+                    for var i:Int = 0; i < 7; i++ {
+                        let RNGesusX = Int(arc4random_uniform(wid) + 1)
+                        let RNGesusY = Int(arc4random_uniform(len) + 1)
+                        
+                        points[i] = CGPoint(x: RNGesusX, y: RNGesusY)
 
+                    }
+                    //Leeroy runs around
+                    let moves: [SKAction] = [
+                        SKAction.moveTo(points[0], duration: 0.5),
+                        SKAction.moveTo(points[1], duration: 0.5),
+                        SKAction.moveTo(points[2], duration: 0.5),
+                        SKAction.moveTo(points[3], duration: 0.5),
+                        SKAction.moveTo(points[4], duration: 0.5),
+                        SKAction.moveTo(points[5], duration: 0.5),
+                        SKAction.moveTo(points[6], duration: 0.5),
+                        SKAction.moveTo(CGPoint(x: size.width/2, y: size.height/2), duration: 0.5)
+                        
+                    ]
+                    
+                    self.previous.runAction(SKAction.sequence(moves))
                     
                     
-                }catch {
+                } catch {
                     print("Error getting the audio file")
                 }
                 
@@ -97,6 +113,7 @@ class MiracleRogueScene: SKScene {
             counter++
         }
     }
+    
     
     
     override func didMoveToView(view: SKView) {

@@ -21,9 +21,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-0I-kQc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="qxU-0I-kQc" secondAttribute="height" multiplier="2:3" id="Zgn-AO-Qzj"/>
-                                </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q9V-5I-q8J">
                                 <rect key="frame" x="0.0" y="20" width="320" height="480"/>
@@ -101,6 +98,7 @@
                             <constraint firstItem="q9V-5I-q8J" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="edC-MD-RJV"/>
                             <constraint firstItem="t44-oE-JSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghF-2z-nUz"/>
                             <constraint firstItem="q9V-5I-q8J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k88-jz-XfX"/>
+                            <constraint firstItem="qxU-0I-kQc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="lAP-OG-BKy"/>
                             <constraint firstItem="qxU-0I-kQc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="llG-NZ-OqK"/>
                             <constraint firstItem="qxU-0I-kQc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="psl-jb-rOz"/>
                             <constraint firstItem="q9V-5I-q8J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xPz-TQ-97v"/>
@@ -1042,10 +1040,10 @@
         <image name="wood" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c8Y-VP-gdB"/>
-        <segue reference="hnX-SN-6bW"/>
         <segue reference="Mz9-aB-4NY"/>
+        <segue reference="XC2-HU-z2O"/>
         <segue reference="aPF-mT-vjN"/>
+        <segue reference="c8Y-VP-gdB"/>
         <segue reference="MIi-Qx-Vg4"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -22,6 +22,17 @@ class GameScene: SKScene {
             var sprite = SKSpriteNode()
             let GPTex = SKTexture(imageNamed: "goldenpatron")
             let PTex = SKTexture(imageNamed: "patron")
+            // let FTex = SKTexture(imageNamed: "frothing")
+            // should use a texture atlas for optimization...oops
+            
+            var gifTextures: [SKTexture] = [];
+            
+            for i in 1...100 {
+                gifTextures.append(SKTexture(imageNamed: "frothing\(i)"));
+            }
+            print(gifTextures)
+            
+            
             
             if RNGesus == 1 {
                 
@@ -41,19 +52,18 @@ class GameScene: SKScene {
 
             }
             
-            else if RNGesus == 2 || RNGesus == 3 {
-                sprite = SKSpriteNode(texture: PTex)
+            else if RNGesus == 2  {
+                sprite = SKSpriteNode(imageNamed: "frothing")
                 sprite.xScale = 0.35
                 sprite.yScale = 0.35
                 
-                
                 if let particle = SKEmitterNode(fileNamed: "magic"){
-                particle.position = touch.locationInNode(self)
-                particle.zPosition = CGFloat(self.Zcounter)
-                addChild(particle)
+                    particle.position = touch.locationInNode(self)
+                    particle.zPosition = CGFloat(self.Zcounter)
+                    addChild(particle)
                 }
                 
-                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
+                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("frothing_attack", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
                     audioPlayer.prepareToPlay()

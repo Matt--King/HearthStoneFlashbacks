@@ -48,6 +48,7 @@
 		D01717FD1C10FDEB0029539A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01717FB1C10FDEB0029539A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01718001C1100470029539A /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = D01717FE1C1100470029539A /* magic.sks */; };
 		D01718011C1100470029539A /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D01717FF1C1100470029539A /* spark.png */; };
+		D01718031C1102F20029539A /* frothing_attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D01718021C1102F20029539A /* frothing_attack.mp3 */; };
 		D0BE19801BFD85B0009E4BBA /* Card_Search_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */; };
 		D0BE19A11BFD8C49009E4BBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */; };
 		D0F333F71C02D6330056AA31 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */; };
@@ -169,6 +170,7 @@
 		D01717FB1C10FDEB0029539A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-ejpyvtejjvtlhjbbxbiofwrucmtt/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		D01717FE1C1100470029539A /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
 		D01717FF1C1100470029539A /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		D01718021C1102F20029539A /* frothing_attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = frothing_attack.mp3; path = MP3s/frothing_attack.mp3; sourceTree = "<group>"; };
 		D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Search_Controller.swift; sourceTree = "<group>"; };
 		D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = SOURCE_ROOT; };
@@ -213,6 +215,7 @@
 				BAFD05C51BE057BA00799FBD /* HSFlashBack */,
 				BAFD05C41BE057BA00799FBD /* Products */,
 				BAC0D2271C0015680040DDA8 /* Anduin_Wrynn.mp3 */,
+				D01718021C1102F20029539A /* frothing_attack.mp3 */,
 				BAC0D22F1C0015770040DDA8 /* garrosh_gg.mp3 */,
 				BAC0D2311C00157B0040DDA8 /* Garrosh_greetings.mp3 */,
 				BAC0D2331C00157F0040DDA8 /* Garrosh_Hellscream.mp3 */,
@@ -388,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01718031C1102F20029539A /* frothing_attack.mp3 in Resources */,
 				BA14EF0C1C0FE82500FBF98B /* Leeroy_theme.mp3 in Resources */,
 				BA14EF0A1C0FE80B00FBF98B /* rogue_gg.mp3 in Resources */,
 				BA14EF081C0FE7F700FBF98B /* Leeroy_Death.mp3 in Resources */,

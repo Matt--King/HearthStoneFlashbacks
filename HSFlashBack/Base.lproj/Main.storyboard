@@ -891,7 +891,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-84-Zps">
                                         <rect key="frame" x="45" y="378" width="238" height="30"/>
-                                        <state key="normal" title="Share this App with Your Friends!"/>
+                                        <state key="normal" title="Share Portrait"/>
                                         <connections>
                                             <action selector="showShare:" destination="vlm-b6-Yz7" eventType="touchUpInside" id="yGA-AY-4hR"/>
                                         </connections>

@@ -44,41 +44,25 @@ class MiracleRogueScene: SKScene {
                 }
                 self.previous = sprite
             } else if counter%3 == 2 {
-                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_theme", ofType: "mp3")!)
+                let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_Attack", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
                     audioPlayer.prepareToPlay()
                     audioPlayer.play()
                     
-                    
-                    var points:[CGPoint] = [
-                        CGPoint(x: 0, y: 0),
-                        CGPoint(x: 0, y: 0),
-                        CGPoint(x: 0, y: 0),
-                        CGPoint(x: 0, y: 0),
-                        CGPoint(x: 0, y: 0)
-                    ]
-                    
+                    let c = 10
+
                     let wid:UInt32 = (UInt32)(size.width)
                     let len:UInt32 = (UInt32)(size.height)
+                    var moves: [SKAction] = [SKAction]()
                     
-                    for var i:Int = 0; i < 5; i++ {
+                    for var i:Int = 0; i < c; i++ {
                         let RNGesusX = Int(arc4random_uniform(wid) + 1)
                         let RNGesusY = Int(arc4random_uniform(len) + 1)
-                        
-                        points[i] = CGPoint(x: RNGesusX, y: RNGesusY)
-
+                        moves.append(SKAction.moveTo(CGPoint(x: RNGesusX, y: RNGesusY), duration: 0.25))
                     }
+                    moves.append(SKAction.moveTo(CGPoint(x: size.width/2, y: size.height/2), duration: 0.5))
                     //Leeroy runs around
-                    let moves: [SKAction] = [
-                        SKAction.moveTo(points[0], duration: 0.5),
-                        SKAction.moveTo(points[1], duration: 0.5),
-                        SKAction.moveTo(points[2], duration: 0.5),
-                        SKAction.moveTo(points[3], duration: 0.5),
-                        SKAction.moveTo(points[4], duration: 0.5),
-                        SKAction.moveTo(CGPoint(x: size.width/2, y: size.height/2), duration: 0.5)
-                        
-                    ]
                     
                     self.previous.runAction(SKAction.sequence(moves))
                     
@@ -93,7 +77,7 @@ class MiracleRogueScene: SKScene {
             sprite = SKSpriteNode(imageNamed:"shadowstep")
             sprite.xScale = 0.35
             sprite.yScale = 0.35
-            let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_Death", ofType: "mp3")!)
+            let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leeroy_theme", ofType: "mp3")!)
             do{
                 self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
                 audioPlayer.prepareToPlay()

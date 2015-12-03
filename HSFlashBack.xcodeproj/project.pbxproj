@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA14EF051C0FD65300FBF98B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA14EF041C0FD65300FBF98B /* Alamofire.framework */; };
-		BA14EF061C0FD65300FBF98B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA14EF041C0FD65300FBF98B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA14EF081C0FE7F700FBF98B /* Leeroy_Death.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF071C0FE7F700FBF98B /* Leeroy_Death.mp3 */; };
 		BA14EF0A1C0FE80B00FBF98B /* rogue_gg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF091C0FE80B00FBF98B /* rogue_gg.mp3 */; };
 		BA14EF0C1C0FE82500FBF98B /* Leeroy_theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF0B1C0FE82500FBF98B /* Leeroy_theme.mp3 */; };
@@ -46,8 +44,10 @@
 		BAFD05C91BE057BA00799FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD05C81BE057BA00799FBD /* ViewController.swift */; };
 		BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CA1BE057BA00799FBD /* Main.storyboard */; };
 		BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CD1BE057BA00799FBD /* Assets.xcassets */; };
-		D02D42CE1C0FBC8A00C21940 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */; };
-		D02D42CF1C0FBC8A00C21940 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D02D42CD1C0FBC8A00C21940 /* spark.png */; };
+		D01717FC1C10FDEB0029539A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01717FB1C10FDEB0029539A /* Alamofire.framework */; };
+		D01717FD1C10FDEB0029539A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01717FB1C10FDEB0029539A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D01718001C1100470029539A /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = D01717FE1C1100470029539A /* magic.sks */; };
+		D01718011C1100470029539A /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D01717FF1C1100470029539A /* spark.png */; };
 		D0BE19801BFD85B0009E4BBA /* Card_Search_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */; };
 		D0BE19A11BFD8C49009E4BBA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */; };
 		D0F333F71C02D6330056AA31 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */; };
@@ -120,7 +120,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BAAA6FC41C02DC5800685BF6 /* AlamofireImage.framework in Embed Frameworks */,
-				BA14EF061C0FD65300FBF98B /* Alamofire.framework in Embed Frameworks */,
+				D01717FD1C10FDEB0029539A /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +128,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BA14EF041C0FD65300FBF98B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-gihwisuwwxtfebbshpdbxxqtclze/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		BA14EF071C0FE7F700FBF98B /* Leeroy_Death.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_Death.mp3; path = MP3s/Leeroy_Death.mp3; sourceTree = "<group>"; };
 		BA14EF091C0FE80B00FBF98B /* rogue_gg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rogue_gg.mp3; path = MP3s/rogue_gg.mp3; sourceTree = "<group>"; };
 		BA14EF0B1C0FE82500FBF98B /* Leeroy_theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_theme.mp3; path = MP3s/Leeroy_theme.mp3; sourceTree = "<group>"; };
@@ -167,8 +166,9 @@
 		BAFD05CB1BE057BA00799FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFD05CD1BE057BA00799FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFD05D21BE057BA00799FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
-		D02D42CD1C0FBC8A00C21940 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		D01717FB1C10FDEB0029539A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-ejpyvtejjvtlhjbbxbiofwrucmtt/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		D01717FE1C1100470029539A /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
+		D01717FF1C1100470029539A /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Search_Controller.swift; sourceTree = "<group>"; };
 		D0BE19A01BFD8C49009E4BBA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		D0F333F61C02D6330056AA31 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = SOURCE_ROOT; };
@@ -182,7 +182,7 @@
 				BAAA6FC31C02DC5800685BF6 /* AlamofireImage.framework in Frameworks */,
 				BABCFDD01BF82D64008E52A0 /* GameController.framework in Frameworks */,
 				BABCFDCE1BF82D5E008E52A0 /* AVFoundation.framework in Frameworks */,
-				BA14EF051C0FD65300FBF98B /* Alamofire.framework in Frameworks */,
+				D01717FC1C10FDEB0029539A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +206,7 @@
 		BAFD05BA1BE057BA00799FBD = {
 			isa = PBXGroup;
 			children = (
-				BA14EF041C0FD65300FBF98B /* Alamofire.framework */,
+				D01717FB1C10FDEB0029539A /* Alamofire.framework */,
 				BAAA6FA61C02DB3000685BF6 /* AlamofireImage.xcodeproj */,
 				BABCFDCF1BF82D64008E52A0 /* GameController.framework */,
 				BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */,
@@ -263,8 +263,8 @@
 				BAC0D2491C0019110040DDA8 /* MiracleRogueScene.swift */,
 				BAC0D2511C0019940040DDA8 /* MiracleRogueScene.sks */,
 				BAC0D2531C0019CA0040DDA8 /* MiracleRogueController.swift */,
-				D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */,
-				D02D42CD1C0FBC8A00C21940 /* spark.png */,
+				D01717FE1C1100470029539A /* magic.sks */,
+				D01717FF1C1100470029539A /* spark.png */,
 			);
 			path = HSFlashBack;
 			sourceTree = "<group>";
@@ -399,9 +399,10 @@
 				BAC0D2381C0015890040DDA8 /* Guldan.mp3 in Resources */,
 				BABCFDC81BF82A06008E52A0 /* GameScene.sks in Resources */,
 				BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */,
+				D01718001C1100470029539A /* magic.sks in Resources */,
 				BAC0D2401C00159C0040DDA8 /* Rexxar.mp3 in Resources */,
+				D01718011C1100470029539A /* spark.png in Resources */,
 				BAC0D2281C0015680040DDA8 /* Anduin_Wrynn.mp3 in Resources */,
-				D02D42CF1C0FBC8A00C21940 /* spark.png in Resources */,
 				BAC0D2421C0015A00040DDA8 /* Thrall.mp3 in Resources */,
 				BAC0D2301C0015770040DDA8 /* garrosh_gg.mp3 in Resources */,
 				BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */,
@@ -411,7 +412,6 @@
 				BAC0D2441C0015A50040DDA8 /* Uther_Lightbringer.mp3 in Resources */,
 				BAC0D2341C00157F0040DDA8 /* Garrosh_Hellscream.mp3 in Resources */,
 				BAC0D23E1C0015960040DDA8 /* pile_on.mp3 in Resources */,
-				D02D42CE1C0FBC8A00C21940 /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

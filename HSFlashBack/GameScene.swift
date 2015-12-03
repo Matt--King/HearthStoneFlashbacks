@@ -20,9 +20,12 @@ class GameScene: SKScene {
             let location = touch.locationInNode(self)
             let RNGesus = Int(arc4random_uniform(6) + 1)
             var sprite = SKSpriteNode()
+            let GPTex = SKTexture(imageNamed: "goldenpatron")
+            let PTex = SKTexture(imageNamed: "patron")
+            
             if RNGesus == 1 {
                 
-                sprite = SKSpriteNode(imageNamed:"goldenpatron")
+                sprite = SKSpriteNode(texture: GPTex)
                 let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
                 sprite.runAction(SKAction.repeatActionForever(action))
                 sprite.xScale = 0.30
@@ -38,18 +41,18 @@ class GameScene: SKScene {
 
             }
             
-            else if RNGesus == 7 {
-                sprite = SKSpriteNode(imageNamed:"patron")
+            else if RNGesus == 2 || RNGesus == 3 {
+                sprite = SKSpriteNode(texture: PTex)
                 sprite.xScale = 0.35
                 sprite.yScale = 0.35
                 
-                /*
-                if let particle = SKEmitterNode(fileNamed: "MyParticle"){
+                
+                if let particle = SKEmitterNode(fileNamed: "magic"){
                 particle.position = touch.locationInNode(self)
                 particle.zPosition = CGFloat(self.Zcounter)
                 addChild(particle)
                 }
-                */
+                
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)
                 do{
                     self.audioPlayer = try AVAudioPlayer(contentsOfURL:sound)
@@ -61,7 +64,7 @@ class GameScene: SKScene {
                 
                 
             } else {
-                sprite = SKSpriteNode(imageNamed:"patron")
+                sprite = SKSpriteNode(texture: PTex)
                 sprite.xScale = 0.35
                 sprite.yScale = 0.35
                 let sound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("GET_IN_HERE", ofType: "mp3")!)

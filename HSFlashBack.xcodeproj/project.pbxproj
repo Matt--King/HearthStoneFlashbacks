@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA14EF051C0FD65300FBF98B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA14EF041C0FD65300FBF98B /* Alamofire.framework */; };
+		BA14EF061C0FD65300FBF98B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA14EF041C0FD65300FBF98B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA14EF081C0FE7F700FBF98B /* Leeroy_Death.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF071C0FE7F700FBF98B /* Leeroy_Death.mp3 */; };
+		BA14EF0A1C0FE80B00FBF98B /* rogue_gg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF091C0FE80B00FBF98B /* rogue_gg.mp3 */; };
+		BA14EF0C1C0FE82500FBF98B /* Leeroy_theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF0B1C0FE82500FBF98B /* Leeroy_theme.mp3 */; };
 		BA2FC37C1C00334F00C1585D /* Leeroy_Attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */; };
 		BA5D930F1BF948DE00F79222 /* GPS_Table_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */; };
 		BAAA6FC31C02DC5800685BF6 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAA6FB21C02DB3100685BF6 /* AlamofireImage.framework */; };
@@ -41,8 +46,6 @@
 		BAFD05C91BE057BA00799FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD05C81BE057BA00799FBD /* ViewController.swift */; };
 		BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CA1BE057BA00799FBD /* Main.storyboard */; };
 		BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CD1BE057BA00799FBD /* Assets.xcassets */; };
-		D02D42CA1C0FAAD800C21940 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02D42C91C0FAAD800C21940 /* Alamofire.framework */; };
-		D02D42CB1C0FAAD800C21940 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D02D42C91C0FAAD800C21940 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D02D42CE1C0FBC8A00C21940 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */; };
 		D02D42CF1C0FBC8A00C21940 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D02D42CD1C0FBC8A00C21940 /* spark.png */; };
 		D0BE19801BFD85B0009E4BBA /* Card_Search_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */; };
@@ -117,7 +120,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BAAA6FC41C02DC5800685BF6 /* AlamofireImage.framework in Embed Frameworks */,
-				D02D42CB1C0FAAD800C21940 /* Alamofire.framework in Embed Frameworks */,
+				BA14EF061C0FD65300FBF98B /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +128,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA14EF041C0FD65300FBF98B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-gihwisuwwxtfebbshpdbxxqtclze/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		BA14EF071C0FE7F700FBF98B /* Leeroy_Death.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_Death.mp3; path = MP3s/Leeroy_Death.mp3; sourceTree = "<group>"; };
+		BA14EF091C0FE80B00FBF98B /* rogue_gg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rogue_gg.mp3; path = MP3s/rogue_gg.mp3; sourceTree = "<group>"; };
+		BA14EF0B1C0FE82500FBF98B /* Leeroy_theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_theme.mp3; path = MP3s/Leeroy_theme.mp3; sourceTree = "<group>"; };
 		BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_Attack.mp3; path = MP3s/Leeroy_Attack.mp3; sourceTree = "<group>"; };
 		BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_Table_Controller.swift; sourceTree = "<group>"; };
 		BAAA6FA61C02DB3000685BF6 /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
@@ -160,7 +167,6 @@
 		BAFD05CB1BE057BA00799FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFD05CD1BE057BA00799FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFD05D21BE057BA00799FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D02D42C91C0FAAD800C21940 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-ejpyvtejjvtlhjbbxbiofwrucmtt/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		D02D42CC1C0FBC8A00C21940 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		D02D42CD1C0FBC8A00C21940 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		D0BE197F1BFD85B0009E4BBA /* Card_Search_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Search_Controller.swift; sourceTree = "<group>"; };
@@ -176,7 +182,7 @@
 				BAAA6FC31C02DC5800685BF6 /* AlamofireImage.framework in Frameworks */,
 				BABCFDD01BF82D64008E52A0 /* GameController.framework in Frameworks */,
 				BABCFDCE1BF82D5E008E52A0 /* AVFoundation.framework in Frameworks */,
-				D02D42CA1C0FAAD800C21940 /* Alamofire.framework in Frameworks */,
+				BA14EF051C0FD65300FBF98B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +206,7 @@
 		BAFD05BA1BE057BA00799FBD = {
 			isa = PBXGroup;
 			children = (
-				D02D42C91C0FAAD800C21940 /* Alamofire.framework */,
+				BA14EF041C0FD65300FBF98B /* Alamofire.framework */,
 				BAAA6FA61C02DB3000685BF6 /* AlamofireImage.xcodeproj */,
 				BABCFDCF1BF82D64008E52A0 /* GameController.framework */,
 				BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */,
@@ -214,10 +220,13 @@
 				BAC0D2371C0015890040DDA8 /* Guldan.mp3 */,
 				BAC0D2391C00158E0040DDA8 /* Jaina_Proudmoore.mp3 */,
 				BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */,
+				BA14EF071C0FE7F700FBF98B /* Leeroy_Death.mp3 */,
 				BAB876C71C00283F00EC1F7E /* Leeroy_Jenkins.mp3 */,
+				BA14EF0B1C0FE82500FBF98B /* Leeroy_theme.mp3 */,
 				BAC0D23B1C0015920040DDA8 /* Malfurion_Stormrage.mp3 */,
 				BAC0D23D1C0015960040DDA8 /* pile_on.mp3 */,
 				BAC0D23F1C00159C0040DDA8 /* Rexxar.mp3 */,
+				BA14EF091C0FE80B00FBF98B /* rogue_gg.mp3 */,
 				BAC0D2411C0015A00040DDA8 /* Thrall.mp3 */,
 				BAC0D2431C0015A50040DDA8 /* Uther_Lightbringer.mp3 */,
 				BAC0D2451C0015A90040DDA8 /* Valeera_Sanguinar.mp3 */,
@@ -379,6 +388,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA14EF0C1C0FE82500FBF98B /* Leeroy_theme.mp3 in Resources */,
+				BA14EF0A1C0FE80B00FBF98B /* rogue_gg.mp3 in Resources */,
+				BA14EF081C0FE7F700FBF98B /* Leeroy_Death.mp3 in Resources */,
 				BA2FC37C1C00334F00C1585D /* Leeroy_Attack.mp3 in Resources */,
 				BAB876C81C00283F00EC1F7E /* Leeroy_Jenkins.mp3 in Resources */,
 				BAC0D2521C0019940040DDA8 /* MiracleRogueScene.sks in Resources */,

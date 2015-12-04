@@ -11,6 +11,8 @@
 		BA14EF0A1C0FE80B00FBF98B /* rogue_gg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF091C0FE80B00FBF98B /* rogue_gg.mp3 */; };
 		BA14EF0C1C0FE82500FBF98B /* Leeroy_theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA14EF0B1C0FE82500FBF98B /* Leeroy_theme.mp3 */; };
 		BA2FC37C1C00334F00C1585D /* Leeroy_Attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */; };
+		BA4AA3181C113667008795DB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AA3141C1135C3008795DB /* Alamofire.framework */; };
+		BA4AA3191C113667008795DB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AA3141C1135C3008795DB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA5D930F1BF948DE00F79222 /* GPS_Table_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */; };
 		BAAA6FC31C02DC5800685BF6 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAA6FB21C02DB3100685BF6 /* AlamofireImage.framework */; };
 		BAAA6FC41C02DC5800685BF6 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAAA6FB21C02DB3100685BF6 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -44,8 +46,6 @@
 		BAFD05C91BE057BA00799FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD05C81BE057BA00799FBD /* ViewController.swift */; };
 		BAFD05CC1BE057BA00799FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CA1BE057BA00799FBD /* Main.storyboard */; };
 		BAFD05CE1BE057BA00799FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFD05CD1BE057BA00799FBD /* Assets.xcassets */; };
-		D01717FC1C10FDEB0029539A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01717FB1C10FDEB0029539A /* Alamofire.framework */; };
-		D01717FD1C10FDEB0029539A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01717FB1C10FDEB0029539A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01718001C1100470029539A /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = D01717FE1C1100470029539A /* magic.sks */; };
 		D01718011C1100470029539A /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D01717FF1C1100470029539A /* spark.png */; };
 		D01718031C1102F20029539A /* frothing_attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D01718021C1102F20029539A /* frothing_attack.mp3 */; };
@@ -121,7 +121,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BAAA6FC41C02DC5800685BF6 /* AlamofireImage.framework in Embed Frameworks */,
-				D01717FD1C10FDEB0029539A /* Alamofire.framework in Embed Frameworks */,
+				BA4AA3191C113667008795DB /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +133,7 @@
 		BA14EF091C0FE80B00FBF98B /* rogue_gg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rogue_gg.mp3; path = MP3s/rogue_gg.mp3; sourceTree = "<group>"; };
 		BA14EF0B1C0FE82500FBF98B /* Leeroy_theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_theme.mp3; path = MP3s/Leeroy_theme.mp3; sourceTree = "<group>"; };
 		BA2FC37B1C00334F00C1585D /* Leeroy_Attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_Attack.mp3; path = MP3s/Leeroy_Attack.mp3; sourceTree = "<group>"; };
+		BA4AA3141C1135C3008795DB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-gihwisuwwxtfebbshpdbxxqtclze/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		BA5D930E1BF948DE00F79222 /* GPS_Table_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS_Table_Controller.swift; sourceTree = "<group>"; };
 		BAAA6FA61C02DB3000685BF6 /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
 		BAB876C71C00283F00EC1F7E /* Leeroy_Jenkins.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Leeroy_Jenkins.mp3; path = MP3s/Leeroy_Jenkins.mp3; sourceTree = "<group>"; };
@@ -167,7 +168,6 @@
 		BAFD05CB1BE057BA00799FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFD05CD1BE057BA00799FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFD05D21BE057BA00799FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D01717FB1C10FDEB0029539A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HSFlashBack-ejpyvtejjvtlhjbbxbiofwrucmtt/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		D01717FE1C1100470029539A /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
 		D01717FF1C1100470029539A /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		D01718021C1102F20029539A /* frothing_attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = frothing_attack.mp3; path = MP3s/frothing_attack.mp3; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 				BAAA6FC31C02DC5800685BF6 /* AlamofireImage.framework in Frameworks */,
 				BABCFDD01BF82D64008E52A0 /* GameController.framework in Frameworks */,
 				BABCFDCE1BF82D5E008E52A0 /* AVFoundation.framework in Frameworks */,
-				D01717FC1C10FDEB0029539A /* Alamofire.framework in Frameworks */,
+				BA4AA3181C113667008795DB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +208,7 @@
 		BAFD05BA1BE057BA00799FBD = {
 			isa = PBXGroup;
 			children = (
-				D01717FB1C10FDEB0029539A /* Alamofire.framework */,
+				BA4AA3141C1135C3008795DB /* Alamofire.framework */,
 				BAAA6FA61C02DB3000685BF6 /* AlamofireImage.xcodeproj */,
 				BABCFDCF1BF82D64008E52A0 /* GameController.framework */,
 				BABCFDCD1BF82D5E008E52A0 /* AVFoundation.framework */,
@@ -561,6 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cs4720.virginia.edu.HSFlashBack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -577,6 +578,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cs4720.virginia.edu.HSFlashBack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

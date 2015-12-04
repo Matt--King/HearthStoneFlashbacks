@@ -107,10 +107,11 @@ class MiracleRogueScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         //	backgroundColor = SKColor.whiteColor()
-        self.scaleMode = SKSceneScaleMode.AspectFill
-        let bgImage = SKSpriteNode(imageNamed: "background")
-        bgImage.xScale = 1.2
-        bgImage.yScale = 1.2
+        self.scaleMode = SKSceneScaleMode.ResizeFill
+        let bgImage = SKSpriteNode(imageNamed: "valeera_bg")
+        //bgImage.xScale = 1
+        //bgImage.yScale = 1
+        bgImage.size = self.frame.size
         bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
         bgImage.zPosition = -1
         self.addChild(bgImage)

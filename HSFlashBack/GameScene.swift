@@ -18,7 +18,7 @@ class GameScene: SKScene {
         
         for touch in touches {
             let location = touch.locationInNode(self)
-            let RNGesus = Int(arc4random_uniform(8) + 1)
+            let RNGesus = Int(arc4random_uniform(6) + 1)
             var sprite = SKSpriteNode()
             let GPTex = SKTexture(imageNamed: "goldenpatron")
             let PTex = SKTexture(imageNamed: "patron")
@@ -94,10 +94,11 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         //	backgroundColor = SKColor.whiteColor()
-        self.scaleMode = SKSceneScaleMode.AspectFill
+        self.scaleMode = SKSceneScaleMode.ResizeFill
         let bgImage = SKSpriteNode(imageNamed: "garrosh_bg")
-        bgImage.xScale = 1.2
-        bgImage.yScale = 1.2
+        //bgImage.xScale = 1.2
+        //bgImage.yScale = 1.2
+        bgImage.size = self.frame.size
         bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
         bgImage.zPosition = -1
         self.addChild(bgImage)

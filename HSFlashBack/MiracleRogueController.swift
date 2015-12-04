@@ -51,7 +51,8 @@ class MiracleRogueController: UIViewController {
             print("Error getting the audio file")
         }
         
-    }
+    }    
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         

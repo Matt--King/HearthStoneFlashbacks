@@ -1040,10 +1040,10 @@
         <image name="wood" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Mz9-aB-4NY"/>
+        <segue reference="8gD-e7-XHb"/>
         <segue reference="XC2-HU-z2O"/>
-        <segue reference="aPF-mT-vjN"/>
         <segue reference="c8Y-VP-gdB"/>
+        <segue reference="rFQ-c0-rYV"/>
         <segue reference="MIi-Qx-Vg4"/>
     </inferredMetricsTieBreakers>
 </document>

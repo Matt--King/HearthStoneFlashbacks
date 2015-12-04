@@ -57,9 +57,9 @@ class Card_Search: UIViewController {
                     self.SearchField.endEditing(true)
                 
                     var alertController:UIAlertController?
-                    alertController = UIAlertController(title: "Oops.",
+                    alertController = UIAlertController(title: "😞Oops😞",
                     message: "That card could not be found or is not collectible", preferredStyle: .Alert)
-                    let firstAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
+                    let firstAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.Cancel, handler: nil)
                     alertController!.addAction(firstAction)
                     self.presentViewController(alertController!, animated: true, completion: nil)
                 

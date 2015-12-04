@@ -697,7 +697,7 @@
                         <viewControllerLayoutGuide type="top" id="lwN-Ed-CyB"/>
                         <viewControllerLayoutGuide type="bottom" id="fbl-dG-kz6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9aw-bz-6Kn" customClass="UIControl">
+                    <view key="view" contentMode="scaleToFill" id="9aw-bz-6Kn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -748,13 +748,18 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q5i-60-2mT">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q5i-60-2mT">
                                         <rect key="frame" x="40" y="0.0" width="240" height="248"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="248" id="DVL-jn-iCJ"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="HeG-CT-MUC" appends="YES" id="XyG-AR-LHu"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="r5z-6y-doY" firstAttribute="top" secondItem="q5i-60-2mT" secondAttribute="bottom" constant="66" id="3ZB-a8-QuP"/>
                                     <constraint firstItem="q5i-60-2mT" firstAttribute="top" secondItem="Ks7-GU-bX2" secondAttribute="top" id="FcM-e7-GkG"/>
@@ -768,6 +773,9 @@
                                     <constraint firstItem="r5z-6y-doY" firstAttribute="top" secondItem="wgs-Jx-Yhu" secondAttribute="bottom" constant="8" symbolic="YES" id="ree-fk-FEB"/>
                                     <constraint firstItem="q5i-60-2mT" firstAttribute="centerX" secondItem="r5z-6y-doY" secondAttribute="centerX" id="yDo-4V-GRu"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F1E-9h-jaV" appends="YES" id="2eX-sj-bAe"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -793,6 +801,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oj9-vh-mtR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="F1E-9h-jaV">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="FvL-YJ-h6d" id="AV3-Av-FwD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="HeG-CT-MUC">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="FvL-YJ-h6d" id="3d9-YP-jOC"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1909" y="6"/>
         </scene>

@@ -1,26 +1,23 @@
-# HearthStone Flashbacks: Relive the Scariest Experiences of Hearthstone
+# HearthStone Flashbacks
+## Relive the Scariest Experiences of Hearthstone
 
+### Description
 Hearthstone Flashbacks is an application dedicated to letting users relive the saltiest, most frustrating memories of their Hearthstone career. Whether they are being overwhelmed by Grim Patrons, or are busy not interacting with Miracle Rogue’s infinite Leeroys, or are being BM’ed with emote-spams, every user is guaranteed to have their day ruined whenever they open this app. When the user is finished being enraged by rude opponents and unwinnable games, they can take a break by creating and sharing their own custom Hero Portrait, searching for specific cards over the internet, or checking from where in the world their pain is coming! Here is quick feature overview:
-Grim Patron Warrior Simulator -  Tap the screen to spawn Patron. Concede once you’ve had enough!
-Miracle Rogue Simulator - Watch helplessly while Valeera summons Leeroy over and over! At least you can interact with the Concede Button!
-General Saltiness Simulator - Pick your least favorite hero, and watch as they BM emote-spam you for hours on end! This feature also lets you know how many times that hero has made you salty.
-Help Alert Toggle - Found on the Simulators Screen. Turns off all of the simulator’s Help Alerts for all of the “seasoned” (like salt, get it?) users who know how to use the simulators.
-Source of Pain Locator - Finds the user’s current GPS location, and lets them know the closest Blizzard Server to them, which is likely where their Hearthstone Pain usually occurs.
-Custom Hero Portrait - Allows the user to take a picture and create their own custom Hero Portrait. The user is then allowed to download their custom Hero and do what they wish with them. Additionally, let your friends know exactly how bad of a time you’re having by sending them your custom Hero Portrait! Don’t forget to be salty!
-Card Search - See a card recently that lost you a game? Search for it on the card search screen! You can see the golden card art, the artist, and the in-game flavor text for all of the cards in the game. This feature requires an internet connection.
+* Grim Patron Warrior Simulator -  Spawn Patron. Concede once you’ve had enough!
+* Miracle Rogue Simulator
+* General Saltiness Simulator
+* Source of Pain Locator
+* Custom Hero Portrait
+* Card Search
+* A wireframe of the screens of the application can be viewed [here](https://docs.google.com/presentation/d/1vB9P5p7PSNsy59zRYw1z3ez5Z0sGEJSeOqluuvC4W0s/edit?usp=sharing).
 
-Usage Instructions
-While you are on the Grim Patron Warrior Simulator Screen, tap the screen to spawn a Patron, and press the Concede button to close the page. If you have your device’s volume turned on, you can hear the Patrons shout, “Everyone! Get in here!” You’ll also have a small chance of seeing golden Grim Patrons and even Frothing Berserkers.
-While on the Miracle Rogue Simulator Screen, the user can tap once to have Valeera summon Leeroy Jenkins. The user can tap a second time to have Leeroy run recklessly around the screen in true Leeroy fashion. A third tap will cause Valeera to cast Shadowstep on Leeroy and for Leeroy to disappear. If the system’s volume is turned on, Leeroy will play a sound to accompany each of the taps. Press the Concede button to quit the simulator.
-If your device volume is turned on in the General Saltiness Simulator page, you can tap the Hero Portrait to hear one of the Hero’s emotes. 
-While on the Custom Hero Portrait page, the user can tap the “Take a Picture” button to take a picture with the device’s camera, and it will appear in the Hero Portrait frame. Then, the user can tap on the “Add Name Here” text to edit the Hero’s name. Next, the user can download the picture to their device via the “Download Hero Portrait” button, and the photo will be saved to the device’s camera roll. Finally the user is able to send the Custom Hero Portrait via e-mail using the “Share Portrait” button.
-The Card Search Page can be accessed from the “Card Search” button on the Home Page. To search for a card, tap the Search bar and use the keyboard that pops up to type in a card name. Once you press Search in the bottom right corner, the keyboard will recede and information on the card will be displayed. The user can tap the search bar again to start a new search. Additionally, the user can tap outside of the keyboard to cancel a search.
+ 
+### Usage Instructions
+Use the script in SHELL: to download the files. Run them through XCode on a personal device or in a simulator. 
 
-Highlight Features
+### Highlight Features
 The Grim Patron Simulator is the closest one can get to the real experience of losing to a Grim Patron Warrior in its heyday. Starting from the Home Page, press the Simulators button on the Hearthstone card. Then, tap the Grim Patron Flashback button. This activates the simulator. Whenever you tap the screen, a Grim Patron appears and shouts “Everyone! Get in here!”, all while Garrosh looms in the background, just watching. This continues until you hit Concede, at which point, Garrosh will congratulate you on a game well played. (Obviously he thinks it was a good game, the Patrons weren’t attacking him!)
 The second simulation, the General Saltiness Simulator, is also accessible from the Simulators Page. This time, select the General Saltiness Simulator button. On the next screen, you can select which Hero you prefer to make you salty, and then press the “Unleash the Salt” button. This launches the Salty Simulator. While on this page, you can tap the Hero Portrait that you selected to hear one of that Hero’s emotes. This simulator also tells you how many times each Hero has been activated in the simulator. 
 The final simulation on the Simulators Screen is the Miracle Rogue Simulator. On this screen, like the Grim Patron Warrior Screen and the Saltiness Simulator, it can be accessed via the Valeera Portrait on the Simulators Screen. Once the Simulator launches, the user can tap once to have valeera summon Leeroy Jenkins. The user can tap a second time to have Leeroy run recklessly around the screen in true Leeroy fashion. A third tap will cause Valeera to cast Shadowstep on Leeroy and for Leeroy to disappear. Repeat until sufficiently salty, or press Concede to end the simulation.
 On the Custom Hero Portrait Screen can take a picture with the device’s camera and set it inside of the empty frame on the page. The user can update the text underneath to hold up to 15 characters, and then the user can download the full Hero Portrait to their device’s camera roll via the “Download Portrait” button. The user can also share the photo via email by pressing the “Share Portrait” button.  This page does not save the user’s portrait when you leave it, so there is an alert that warns the user of this fact when they try to navigate away from the page.
 The Card Search Page can be accessed from the “Card Search” button on the Home Page. To search for a card, tap the Search bar and use the keyboard that pops up to type in a card name. Once you press Search in the bottom right corner, the keyboard will recede and information on the card will be displayed, including the card art and effect (if it has one), the artist, and the in-game flavor text. The user can tap the search bar again to start a new search.
-
-A wireframe of the screens of the application can be viewed [here](https://docs.google.com/presentation/d/1vB9P5p7PSNsy59zRYw1z3ez5Z0sGEJSeOqluuvC4W0s/edit?usp=sharing).

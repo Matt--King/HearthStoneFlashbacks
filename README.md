@@ -14,6 +14,7 @@ Hearthstone Flashbacks is an application dedicated to letting users relive the s
  
 ### Usage Instructions
 Use the script in SHELL: to download the files. Run them through XCode on a personal device or in a simulator. 
+If an Alamofire framework is in red, it can probably be deleted. Additionally, make sure all dependecies and the main application share the same build target (9.1). There is no way to save these settings as XCode resets them on launch.
 
 ### Highlight Features
 The Grim Patron Simulator is the closest one can get to the real experience of losing to a Grim Patron Warrior in its heyday. Starting from the Home Page, press the Simulators button on the Hearthstone card. Then, tap the Grim Patron Flashback button. This activates the simulator. Whenever you tap the screen, a Grim Patron appears and shouts “Everyone! Get in here!”, all while Garrosh looms in the background, just watching. This continues until you hit Concede, at which point, Garrosh will congratulate you on a game well played. (Obviously he thinks it was a good game, the Patrons weren’t attacking him!)  

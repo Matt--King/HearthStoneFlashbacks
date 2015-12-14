@@ -10,6 +10,7 @@ Hearthstone Flashbacks is an application dedicated to letting users relive the s
 * Custom Hero Portrait
 * Card Search
 * A wireframe of the screens of the application can be viewed [here](https://docs.google.com/presentation/d/1vB9P5p7PSNsy59zRYw1z3ez5Z0sGEJSeOqluuvC4W0s/edit?usp=sharing).
+* The simulations and the card search can be viewed [here](https://drive.google.com/file/d/0B2qtwFkQAc-9RE9VYmZlZkVqb1k/view?usp=sharing)
 
  
 ### Usage Instructions
